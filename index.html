@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quang Nhat Duong — Portfolio</title>
+<style>
+  :root{
+    --bg:#f7f8fa;
+    --card:#ffffff;
+    --ink:#1a1d23;
+    --sub:#5b6270;
+    --accent:#2563eb;
+    --accent-light:#eef2ff;
+    --border:#e6e8ec;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.6;
+  }
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .container{max-width:900px;margin:0 auto;padding:0 24px;}
+
+  /* Header */
+  header{
+    background:linear-gradient(135deg,#1e293b,#334155);
+    color:#fff;
+    padding:64px 0 48px;
+  }
+  .header-inner{display:flex;align-items:center;gap:28px;flex-wrap:wrap;}
+  .avatar{
+    width:120px;height:120px;border-radius:50%;
+    background:#475569;
+    display:flex;align-items:center;justify-content:center;
+    font-size:40px;font-weight:700;color:#fff;
+    border:3px solid rgba(255,255,255,0.3);
+    flex-shrink:0;
+  }
+  .header-text h1{font-size:32px;font-weight:700;margin-bottom:6px;}
+  .header-text .role{font-size:16px;color:#93c5fd;font-weight:600;margin-bottom:10px;}
+  .header-text .tagline{font-size:15px;color:#cbd5e1;max-width:560px;}
+  .header-meta{margin-top:16px;font-size:14px;color:#94a3b8;}
+  .contact-links{display:flex;gap:16px;margin-top:14px;flex-wrap:wrap;}
+  .contact-links a{
+    color:#e2e8f0;background:rgba(255,255,255,0.08);
+    padding:6px 14px;border-radius:20px;font-size:13px;
+    border:1px solid rgba(255,255,255,0.15);
+  }
+  .contact-links a:hover{background:rgba(255,255,255,0.16);text-decoration:none;}
+  .lang-switch{position:absolute;top:20px;right:24px;font-size:13px;}
+  .lang-switch a{color:#cbd5e1;padding:5px 12px;border:1px solid rgba(255,255,255,0.25);border-radius:16px;}
+  .lang-switch a:hover{background:rgba(255,255,255,0.1);text-decoration:none;}
+  header{position:relative;}
+
+  main{padding:48px 0 80px;}
+  section{margin-bottom:48px;}
+  h2{
+    font-size:13px;letter-spacing:1.5px;text-transform:uppercase;
+    color:var(--accent);font-weight:700;margin-bottom:20px;
+    border-bottom:2px solid var(--border);padding-bottom:10px;
+  }
+
+  .card{
+    background:var(--card);border:1px solid var(--border);
+    border-radius:var(--radius);padding:22px 24px;margin-bottom:16px;
+  }
+  .card-title{font-size:17px;font-weight:700;color:var(--ink);}
+  .card-sub{font-size:14px;color:var(--sub);font-weight:600;margin-top:2px;}
+  .card-date{font-size:13px;color:var(--sub);margin-top:2px;}
+  .card ul{margin:12px 0 0 18px;}
+  .card li{margin-bottom:6px;font-size:14.5px;color:#333;}
+  .card p{margin-top:10px;font-size:14.5px;color:#333;}
+  .row{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;}
+
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
+  .tag{
+    background:var(--accent-light);color:var(--accent);
+    font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:16px;
+  }
+
+  .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;}
+  .skill-cat{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;}
+  .skill-cat h3{font-size:14px;margin-bottom:10px;color:var(--ink);}
+  .skill-cat .tags{margin-top:0;}
+
+  .honors-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;}
+
+  .about-text{font-size:15px;color:#333;max-width:720px;}
+
+  footer{text-align:center;padding:32px 0;color:var(--sub);font-size:13px;border-top:1px solid var(--border);}
+
+  @media (max-width:600px){
+    .header-inner{flex-direction:column;text-align:center;}
+    .header-text .tagline{max-width:100%;}
+    header{padding:48px 0 32px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="lang-switch"><a href="en.html">EN 🇬🇧</a></div>
+  <div class="container header-inner">
+    <div class="avatar">QD</div>
+    <div class="header-text">
+      <h1>Quang Nhat Duong</h1>
+      <div class="role">Smart Mobility Engineering Student @ VGU</div>
+      <div class="tagline">Building IoT & embedded systems (ESP32-based projects like ByteLoop) for EV automation. Open to hardware/firmware internships.</div>
+      <div class="header-meta">📍 Quận 7, Hồ Chí Minh City, Vietnam</div>
+      <div class="contact-links">
+        <a href="mailto:vietmynguyen@umass.edu">✉ vietmynguyen@umass.edu</a>
+        <a href="https://www.linkedin.com/in/quang-nhat-duong-95208b382/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/nhatduongchess-cloud" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section id="about">
+    <h2>Giới thiệu</h2>
+    <p class="about-text">
+      Sinh viên năm nhất ngành Smart Mobility Engineering tại Vietnamese-German University (VGU),
+      tập trung vào hệ thống nhúng và IoT cho các ứng dụng xe điện. Đã tự xây dựng các dự án end-to-end
+      từ thu thập dữ liệu cảm biến (ESP32), truyền dữ liệu thời gian thực (MQTT), lưu trữ/phân tích trên
+      cloud (Supabase) đến giao diện người dùng (Flutter). Có kinh nghiệm quản lý ngân sách và lãnh đạo
+      đội nhóm quy mô lớn thông qua hoạt động sinh viên.
+    </p>
+  </section>
+
+  <section id="experience">
+    <h2>Kinh nghiệm</h2>
+
+    <div class="card">
+      <div class="row">
+        <div>
+          <div class="card-title">Logistics and Finance Manager</div>
+          <div class="card-sub">Career Fair 2026 — Vietnamese-German University</div>
+        </div>
+        <div class="card-date">Nov 2025 – May 2026 · 7 tháng</div>
+      </div>
+      <p>Dẫn dắt bộ phận Logistics & Finance cho Career Fair 2026 — sự kiện quy mô lớn do sinh viên tổ chức, kết nối hơn 1.000 sinh viên với 30+ doanh nghiệp (SAP, MiTek, Wanek).</p>
+      <ul>
+        <li>Quản lý và phân bổ ngân sách hơn 300 triệu VND trên toàn bộ hoạt động sự kiện trong 7 tháng</li>
+        <li>Vận hành toàn bộ quy trình tài chính, bao gồm thanh toán nhà cung cấp và chứng từ hóa đơn đỏ</li>
+        <li>Lãnh đạo đội nhóm 8 người, phân công công việc giữa các mảng khảo sát địa điểm/nhà cung cấp và báo cáo tài chính</li>
+        <li>Duy trì tuân thủ tài chính và báo cáo chính xác xuyên suốt vòng đời sự kiện</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div>
+          <div class="card-title">Student Volunteer</div>
+          <div class="card-sub">VGU Math Open Day</div>
+        </div>
+        <div class="card-date">Dec 2025 · 1 tháng · Hồ Chí Minh City</div>
+      </div>
+      <p>Thiết kế và dẫn dắt các hoạt động tương tác, hướng dẫn hơn 200 học sinh trung học qua các trải nghiệm toán học thực hành, giúp toán học trở nên gần gũi và hấp dẫn hơn.</p>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div>
+          <div class="card-title">Volunteer Staff</div>
+          <div class="card-sub">Germany–Vietnam Green Science and Innovation Conference</div>
+        </div>
+        <div class="card-date">Oct 2025 · 1 tháng · Vietnam</div>
+      </div>
+      <p>Hỗ trợ hội nghị kỷ niệm 50 năm hợp tác song phương Đức–Việt, hướng dẫn khách quốc tế và đại biểu, đảm bảo trải nghiệm diễn ra suôn sẻ — trải nghiệm đầu tiên về ngoại giao cấp hội nghị và điều phối đa văn hóa.</p>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div>
+          <div class="card-title">Student — Đại diện lớp</div>
+          <div class="card-sub">Dinh Thien Ly High School</div>
+        </div>
+        <div class="card-date">Aug 2019 – Aug 2022 · 3 năm</div>
+      </div>
+      <p>Đại diện lớp trong các quyết định toàn trường suốt 3 năm, làm việc trực tiếp với giáo viên và bạn học để phản ánh ý kiến và góp phần định hình chính sách cải thiện đời sống học đường. Đồng tổ chức các sự kiện và hoạt động học thuật.</p>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div>
+          <div class="card-title">Competition Participant</div>
+          <div class="card-sub">City-level Excellent Student Contest · 30/4 Olympiad · Cờ vua</div>
+        </div>
+        <div class="card-date">Aug 2019 – Aug 2022</div>
+      </div>
+      <p>Đại diện trường tham gia các cuộc thi học thuật và thể thao chiến lược, rèn luyện tư duy phân tích, giải quyết vấn đề và kỷ luật dưới áp lực.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Dự án nổi bật</h2>
+
+    <div class="card">
+      <div class="row">
+        <div class="card-title">ByteLoop — Electrostatic TRWP Capture System for EVs</div>
+        <div class="card-date">May 2026 – Present</div>
+      </div>
+      <p>Hệ thống thu gom hạt bụi mài mòn lốp/đường (TRWP) tĩnh điện gắn trên bánh xe cho xe điện, xây dựng quanh pipeline dữ liệu real-time từ cảm biến đến cloud — theo mô hình kiến trúc tương tự các stack nhận thức của xe tự hành và hệ thống telematics đội xe quy mô lớn. Bộ điều khiển biên ESP32 thực hiện sensor fusion (load cell + giám sát hệ thống điện áp cao), truyền telemetry qua MQTT lên backend cloud để lưu trữ và phân tích chuỗi thời gian.</p>
+      <ul>
+        <li>Sensor fusion & edge computing — thu thập, xử lý dữ liệu real-time trên ESP32</li>
+        <li>Real-time data streaming — pipeline telemetry MQTT từ thiết bị gắn trên xe lên cloud</li>
+        <li>Big data infrastructure — backend Supabase cho lưu trữ time-series, mô hình hóa quan hệ và phân tích quy mô đội xe</li>
+        <li>Fleet-scale data strategy — thiết kế cho pilot đa xe của Green SM, hướng tới bảo trì dự đoán và bản đồ nhiệt ô nhiễm</li>
+        <li>Data-driven product design — lớp ứng dụng Flutter tiêu thụ dữ liệu đã xử lý để tạo insight cho người dùng</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">ESP32</span><span class="tag">IoT</span><span class="tag">MQTT</span>
+        <span class="tag">Supabase</span><span class="tag">Flutter</span><span class="tag">Embedded Systems</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="card-title">Neural Voice Console</div>
+        <div class="card-date">Feb 2026 – Present</div>
+      </div>
+      <p>Xây dựng pipeline speech-to-text và dịch đa ngôn ngữ chạy hoàn toàn local — không cloud, không API key, không chi phí vận hành, chỉ dùng các mô hình mã nguồn mở chạy trên máy cá nhân. Stack: FastAPI backend + frontend HTML/CSS/JS tùy chỉnh, dùng HuggingFace Whisper để phiên âm (Việt, Anh, Đức).</p>
+      <ul>
+        <li>Fine-tune LoRA adapter trên ~4.000 mẫu audio tiếng Việt (6,5 giờ) — tăng độ chính xác từ 87,4% lên 94,3%, adapter chỉ 18MB (so với mô hình gốc 1,5GB)</li>
+        <li>Tích hợp NLLB-200 của Meta cho dịch VI↔EN↔DE (38,4 BLEU cho VI→EN)</li>
+        <li>Xây dựng lớp hậu xử lý phát hiện hallucination, chấm điểm độ tin cậy, trích xuất từ khóa và tóm tắt — không cần LLM API. Phát hiện ~12% đoạn audio nhiễu là hallucination, khôi phục output sạch ở 91% trường hợp qua retry</li>
+        <li>Đoạn clip 60 giây phiên âm trong ~4,2s trên CPU; fine-tune LoRA đầy đủ mất 3,5 giờ trên một RTX 3060</li>
+        <li>Hỗ trợ MP3/WAV/M4A/WEBM/OGG tới 30MB, triển khai qua uvicorn + ngrok</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Whisper</span>
+        <span class="tag">LoRA Fine-tuning</span><span class="tag">HTML/CSS/JS</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="card-title">Calculus Project: An Exploration of Functions and Limits (LaTeX)</div>
+        <div class="card-date">Sep 2025 – Nov 2025</div>
+      </div>
+      <p>Báo cáo học thuật nhóm khai thác các nguyên lý cốt lõi của hàm số và giới hạn — bao gồm định nghĩa hình thức, định lý chính và chứng minh chặt chẽ làm nền tảng cho giải tích toán học. Phụ trách dàn trang LaTeX và viết kỹ thuật, cấu trúc tài liệu, định dạng ký hiệu toán học và chứng minh.</p>
+      <div class="tags">
+        <span class="tag">LaTeX</span><span class="tag">Mathematical Analysis</span><span class="tag">Technical Writing</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="honors">
+    <h2>Giải thưởng & Thành tích</h2>
+    <div class="honors-grid">
+      <div class="card">
+        <div class="card-title">Top 30 Finalist</div>
+        <div class="card-sub">Asian Hackathon for Green Future 2026 · Jun 2026</div>
+        <p>Lọt Top 30 đội thi tiếp tục vòng trong, nổi bật giữa 439 bài dự thi từ hơn 20 quốc gia châu Á.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">Semifinalist</div>
+        <div class="card-sub">International Chemistry Competition (ICHC) 2026 · Apr 2026</div>
+        <p>Vào vòng bán kết nhờ thể hiện tốt ở vòng loại, thể hiện tư duy phân tích và giải quyết vấn đề.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">Top 20 Teams</div>
+        <div class="card-sub">Hackathon Digiport Logistics 2025 · Nov 2025</div>
+        <p>Top 20 bán kết trong hơn 100 đội trên toàn quốc, với giải pháp chuyển đổi số cho logistics và cảng biển.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">Merit-based Scholarship</div>
+        <div class="card-sub">100% Tuition Fee · 2025–2026</div>
+        <p>Học bổng toàn phần học phí tại Vietnamese-German University.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Học vấn</h2>
+    <div class="card">
+      <div class="row">
+        <div>
+          <div class="card-title">Vietnamese-German University (VGU)</div>
+          <div class="card-sub">Bachelor of Science, Smart Mobility Engineering</div>
+        </div>
+        <div class="card-date">Sep 2025 – Sep 2029</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div>
+          <div class="card-title">Dinh Thien Ly High School</div>
+          <div class="card-sub">Tốt nghiệp THPT</div>
+        </div>
+        <div class="card-date">Aug 2018 – Sep 2025</div>
+      </div>
+      <p>Hoạt động: Cờ vua, Head of Finance, Event Committee Member, Federation Student Committee, Ceberus Football Team, Charity Works, Đội tuyển Địa lý xuất sắc.</p>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <h2>Chứng chỉ</h2>
+    <div class="tags">
+      <span class="tag">IELTS (IDP, 2025–2027)</span>
+      <span class="tag">Foundations of Digital Entrepreneurship — GIZ</span>
+      <span class="tag">An Introduction to AI and Emerging Technologies — GIZ</span>
+      <span class="tag">Unpacking AI — GIZ</span>
+      <span class="tag">Understanding Data — GIZ</span>
+      <span class="tag">Digital Safety and Security — GIZ</span>
+      <span class="tag">Computing Skills for Business — GIZ</span>
+      <span class="tag">What Is Generative AI? — LinkedIn</span>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Kỹ năng</h2>
+    <div class="skills-grid">
+      <div class="skill-cat">
+        <h3>Ngôn ngữ lập trình</h3>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">C/C++ (Embedded)</span>
+          <span class="tag">HTML/CSS/JS</span><span class="tag">LaTeX</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>IoT & Embedded</h3>
+        <div class="tags">
+          <span class="tag">ESP32</span><span class="tag">Sensor Fusion</span>
+          <span class="tag">MQTT</span><span class="tag">Edge Computing</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Backend & Data</h3>
+        <div class="tags">
+          <span class="tag">FastAPI</span><span class="tag">Supabase</span>
+          <span class="tag">Databases</span><span class="tag">Big Data / Time-series</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>AI/ML</h3>
+        <div class="tags">
+          <span class="tag">HuggingFace Whisper</span><span class="tag">LoRA Fine-tuning</span>
+          <span class="tag">NLLB (Translation)</span><span class="tag">Generative AI</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>App & Frontend</h3>
+        <div class="tags">
+          <span class="tag">Flutter</span><span class="tag">uvicorn / ngrok</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Quản lý & Lãnh đạo</h3>
+        <div class="tags">
+          <span class="tag">Budget Management</span><span class="tag">Team Leadership</span>
+          <span class="tag">Event Operations</span><span class="tag">Technical Writing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 Quang Nhat Duong · vietmynguyen@umass.edu
+  </div>
+</footer>
+
+</body>
+</html>
