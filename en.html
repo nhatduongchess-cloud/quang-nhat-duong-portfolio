@@ -109,7 +109,7 @@
     <div class="header-text">
       <h1>Quang Nhat Duong</h1>
       <div class="role">Smart Mobility Engineering Student @ VGU</div>
-      <div class="tagline">Building IoT & embedded systems (ESP32-based projects like ByteLoop) for EV automation. Open to hardware/firmware internships.</div>
+      <div class="tagline">Building autonomous-driving, computer-vision and embedded systems for smart mobility — CARLA ADAS, on-device AI, ByteLoop. Open to ADAS / autonomous-driving / software internships.</div>
       <div class="header-meta">📍 District 7, Ho Chi Minh City, Vietnam</div>
       <div class="contact-links">
         <a href="mailto:vietmynguyen@umass.edu">✉ vietmynguyen@umass.edu</a>
@@ -203,6 +203,25 @@
 
     <div class="card">
       <div class="row">
+        <div class="card-title">CARLA ADAS — Perception-Driven Active Safety &amp; L3 Automated Driving</div>
+        <div class="card-date">2026</div>
+      </div>
+      <p>An end-to-end autonomous-driving stack in the CARLA simulator: multi-sensor perception → sensor fusion → a committed safety state machine (AEB + evasive lane change), with an L3 “DRIVE PILOT”-style ODD/MRM layer and a reinforcement-learning cruise controller — built with a bias toward testable, safety-first engineering. <a href="https://github.com/nhatduongchess-cloud/carla-adas-active-safety-project" target="_blank">Source on GitHub ↗</a></p>
+      <ul>
+        <li>Perception: YOLOv8/v10 (FP16) + LiDAR DBSCAN clustering + lane detection + Kalman tracking; LiDAR→camera fusion for metric distance</li>
+        <li>Calibration-free LiDAR braking corridor brakes for any in-path obstacle regardless of detector class; safety FSM NORMAL→FOLLOW→EVADE→EMERGENCY_BRAKE</li>
+        <li>L3 layer: ODD monitor + minimal-risk maneuver (TOR→MRM→SAFE_STOP); a PyTorch DQN cruise controller bounded by a safety-speed cap</li>
+        <li>Root-caused &amp; fixed a collision-causing arbiter bug; locked it with a regression suite (70 automated checks) on GitHub Actions CI</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">OpenCV</span>
+        <span class="tag">CARLA</span><span class="tag">YOLO</span><span class="tag">LiDAR</span>
+        <span class="tag">Sensor Fusion</span><span class="tag">ADAS / AEB</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="row">
         <div class="card-title">ByteLoop — Electrostatic TRWP Capture System for EVs</div>
         <div class="card-date">May 2026 – Present</div>
       </div>
@@ -233,6 +252,7 @@
         <li>60-second clip transcribes in ~4.2s on CPU; full LoRA fine-tuning run took 3.5 hrs on a single RTX 3060</li>
         <li>Accepts MP3/WAV/M4A/WEBM/OGG up to 30MB, deployed via uvicorn + ngrok</li>
       </ul>
+      <p><strong>Why it matters:</strong> proves I can build a production-quality AI voice pipeline that's fully offline, privacy-safe, and $0 to run — real for anyone handling sensitive data or working with limited API budgets.</p>
       <div class="tags">
         <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Whisper</span>
         <span class="tag">LoRA Fine-tuning</span><span class="tag">HTML/CSS/JS</span>
@@ -343,6 +363,13 @@
         <div class="tags">
           <span class="tag">HuggingFace Whisper</span><span class="tag">LoRA Fine-tuning</span>
           <span class="tag">NLLB (Translation)</span><span class="tag">Generative AI</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Computer Vision &amp; Autonomous Driving</h3>
+        <div class="tags">
+          <span class="tag">CARLA</span><span class="tag">PyTorch</span><span class="tag">OpenCV</span>
+          <span class="tag">YOLO</span><span class="tag">LiDAR</span><span class="tag">ADAS / AEB</span>
         </div>
       </div>
       <div class="skill-cat">
