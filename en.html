@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme-pref>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,60 +7,56 @@
 <meta name="description" content="Quang Nhat Duong — Smart Mobility Engineering student building autonomous-driving, computer-vision and embedded systems. L3 ADAS in CARLA, offline voice AI, real-time EV telemetry.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div class="topbar">
   <div class="wrap topbar-inner">
-    <a class="brandmark" href="#top"><span class="sq"></span>QND</a>
+    <a class="brand" href="#top">Quang<span class="dotm">.</span></a>
     <nav class="topnav">
       <a href="#about">About</a>
+      <a href="#services">What I do</a>
+      <a href="#work">Work</a>
       <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
       <a href="#awards">Awards</a>
-      <a href="#skills">Skills</a>
     </nav>
     <div class="controls">
-      <a class="btn-ghost" href="index.html" title="Tiếng Việt">VI</a>
-      <button class="btn-ghost" data-theme-toggle aria-label="Toggle color theme"><span class="tstate">DARK</span></button>
+      <a class="icon-btn" href="index.html" title="Tiếng Việt">VI</a>
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle color theme"><span class="tstate">DARK</span></button>
+      <a class="btn btn-dark" href="#contact">Get in touch</a>
     </div>
   </div>
 </div>
 
-<header class="masthead wrap" id="top">
-  <div class="mast-id">
-    <span class="status"><span class="dot"></span>Available for ADAS / autonomous-driving / software internships</span>
-  </div>
-  <h1 class="mast-name">Quang Nhat Duong</h1>
-  <div class="mast-role">SMART MOBILITY ENGINEERING · VGU <span style="color:var(--faint)">×</span> HAW HAMBURG · HO CHI MINH CITY</div>
-  <p class="mast-tag">I build <strong>autonomous-driving, computer-vision and embedded systems</strong> — from an L3 ADAS stack in CARLA to on-device voice AI and real-time EV telemetry. Test-driven, safety-first engineering.</p>
-
-  <div class="contacts">
-    <a class="chip" href="mailto:nhatduongchess@gmail.com">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-      nhatduongchess@gmail.com
-    </a>
-    <a class="chip" href="https://www.linkedin.com/in/quang-nhat-duong-95208b382/" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 17v-7"/></svg>
-      LinkedIn
-    </a>
-    <a class="chip" href="https://github.com/nhatduongchess-cloud" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M9 19c-4 1.5-4-2-5-2m10 4v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.7 11.7 0 0 0-6.2 0C6.9 1.3 5.9 1.6 5.9 1.6a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.5 8c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V19"/></svg>
-      GitHub
-    </a>
-    <span class="chip">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-      District 7, Ho Chi Minh City
-    </span>
+<header class="hero wrap" id="top">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-hi">Hello — I'm</div>
+      <h1 class="hero-name">Quang Nhat<br><em>Duong</em></h1>
+      <p class="hero-lead">A <strong>Smart Mobility Engineering</strong> student building autonomous-driving, computer-vision and embedded systems — from an L3 ADAS stack in CARLA to on-device voice AI and real-time EV telemetry.</p>
+      <div class="hero-role">Smart Mobility Engineering · VGU × HAW Hamburg · HCMC</div>
+      <div class="hero-cta">
+        <a class="btn btn-dark" href="#work">View my work
+          <svg viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-outline" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <!-- Portrait panel: swap the monogram for <img> when a photo is ready -->
+    <div class="hero-panel">
+      <span class="badge">Smart Mobility</span>
+      <div class="mono">QD</div>
+      <span class="avail pill"><span class="dot"></span>Available for internships</span>
+    </div>
   </div>
 
-  <div class="specstrip">
-    <div class="spec"><div class="num">3</div><div class="lbl">Flagship systems built</div></div>
-    <div class="spec"><div class="num"><b>179</b></div><div class="lbl">CARLA safety checks in CI</div></div>
-    <div class="spec"><div class="num">300M<span style="font-size:.6em">₫</span></div><div class="lbl">Event budget led</div></div>
-    <div class="spec"><div class="num">100<span style="font-size:.6em">%</span></div><div class="lbl">Tuition scholarship</div></div>
+  <div class="stats">
+    <div class="stat"><div class="n">3</div><div class="l">Flagship systems built</div></div>
+    <div class="stat"><div class="n"><b>179</b></div><div class="l">CARLA safety checks in CI</div></div>
+    <div class="stat"><div class="n">94.3<span style="font-size:.55em">%</span></div><div class="l">Voice-model accuracy</div></div>
+    <div class="stat"><div class="n">100<span style="font-size:.55em">%</span></div><div class="l">Tuition scholarship</div></div>
   </div>
 </header>
 
@@ -68,105 +64,78 @@
 
   <!-- ABOUT -->
   <section class="section wrap" id="about">
-    <div class="sec-head">
-      <span class="sec-tag"><span class="hash">§</span> ABOUT</span>
-      <span class="sec-rule"></span>
-    </div>
-    <div class="about">
-      <p class="lead">Smart Mobility Engineering student at the <strong>Vietnamese-German University</strong> — a dual degree with HAW Hamburg, Germany, on a full-tuition merit scholarship.</p>
-      <p>I develop self-driving software and applied AI at the intersection of computer vision, machine learning and automotive systems. Working solo, I've taken three systems end-to-end: a complete <strong>L3 ADAS stack in CARLA</strong> (perception → sensor fusion → committed safety decision), a <strong>fully-offline voice-AI pipeline</strong>, and <strong>real-time embedded/IoT systems for electric vehicles</strong>. I prioritize testable, safety-first engineering — and bring large-scale budget and team leadership from student activities.</p>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section class="section wrap" id="experience">
-    <div class="sec-head">
-      <span class="sec-tag"><span class="hash">§</span> EXPERIENCE</span>
-      <h2 class="sec-title">Leadership &amp; operations</h2>
-      <span class="sec-rule"></span>
-    </div>
-    <div class="ledger">
-
-      <article class="entry">
-        <div class="when"><span class="yr">Nov 2025 – May 2026</span><span class="dur">7 months</span></div>
-        <div>
-          <h3 class="role">Logistics &amp; Finance Manager</h3>
-          <div class="org">Career Fair 2026 — Vietnamese-German University</div>
-          <p class="body">Led the Logistics &amp; Finance function for Career Fair 2026, a large student-run event connecting 1,000+ students with 30+ companies (SAP, MiTek, Wanek).</p>
-          <ul>
-            <li>Managed and allocated a <b>300M+ ₫</b> budget across all event operations over seven months.</li>
-            <li>Ran the full financial workflow, including supplier payments and VAT (red-invoice) documentation.</li>
-            <li>Led an <b>8-person team</b>, splitting work across venue/vendor scouting and financial reporting.</li>
-            <li>Maintained financial compliance and accurate reporting across the full event lifecycle.</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="entry">
-        <div class="when"><span class="yr">Dec 2025</span><span class="dur">Ho Chi Minh City</span></div>
-        <div>
-          <h3 class="role">Student Volunteer</h3>
-          <div class="org">VGU Math Open Day</div>
-          <p class="body">Designed and led interactive activities, guiding <b>200+</b> secondary-school students through hands-on math experiences that made abstract concepts approachable.</p>
-        </div>
-      </article>
-
-      <article class="entry">
-        <div class="when"><span class="yr">Oct 2025</span><span class="dur">Vietnam</span></div>
-        <div>
-          <h3 class="role">Volunteer Staff</h3>
-          <div class="org">Germany–Vietnam Green Science &amp; Innovation Conference</div>
-          <p class="body">Supported the conference marking 50 years of German–Vietnamese bilateral cooperation, guiding international delegates — first-hand experience of conference-level diplomacy and cross-cultural coordination.</p>
-        </div>
-      </article>
-
-      <article class="entry">
-        <div class="when"><span class="yr">Aug 2019 – Aug 2022</span><span class="dur">3 years</span></div>
-        <div>
-          <h3 class="role">Student Class Representative</h3>
-          <div class="org">Dinh Thien Ly High School</div>
-          <p class="body">Represented the class in school-wide decisions for three years, working directly with teachers and peers to shape policies improving student life, and co-organized academic and social events.</p>
-        </div>
-      </article>
-
-      <article class="entry">
-        <div class="when"><span class="yr">Aug 2019 – Aug 2022</span></div>
-        <div>
-          <h3 class="role">Competition Participant</h3>
-          <div class="org">City Excellent-Student Contest · 30/4 Olympiad · Chess</div>
-          <p class="body">Represented the school in academic and strategic competitions, sharpening analytical thinking, problem-solving and discipline under pressure.</p>
-        </div>
-      </article>
-
+    <div class="about-grid">
+      <div>
+        <span class="eyebrow">About</span>
+        <p class="about-lead" style="margin-top:14px;">Engineering the software that lets vehicles see, decide and stay safe.</p>
+      </div>
+      <div class="about-body">
+        <p>I study Smart Mobility Engineering at the <strong>Vietnamese-German University</strong> — a dual degree with HAW Hamburg, Germany, on a full-tuition merit scholarship. Working solo, I've taken three systems end-to-end: a complete <strong>L3 ADAS stack in CARLA</strong>, a <strong>fully-offline voice-AI pipeline</strong>, and <strong>real-time embedded/IoT systems for electric vehicles</strong>.</p>
+        <p style="margin-top:14px;">I care about testable, safety-first engineering — geometry that overrides learned components, arbiters that never oscillate, and pipelines you can trust. I also bring large-scale budget and team leadership from student activities.</p>
+      </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section class="section wrap" id="projects">
+  <!-- SERVICES -->
+  <section class="section alt" id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">What I do</span>
+        <h2 class="sec-title">Four things I build <em>well</em>.</h2>
+      </div>
+      <div class="services">
+        <div class="service">
+          <div class="no">01</div>
+          <h3>Autonomous Driving &amp; ADAS</h3>
+          <p>End-to-end self-driving pipelines: perception → sensor fusion → committed active-safety arbitration, built geometry-first and test-driven in CARLA.</p>
+          <div class="st tags"><span class="tag">CARLA</span><span class="tag">Sensor Fusion</span><span class="tag">AEB / MRM</span></div>
+        </div>
+        <div class="service">
+          <div class="no">02</div>
+          <h3>Computer Vision &amp; Perception</h3>
+          <p>Real-time detection, tracking and lane understanding — YOLO, LiDAR clustering and Kalman fusion into true metric range.</p>
+          <div class="st tags"><span class="tag">YOLO</span><span class="tag">LiDAR</span><span class="tag">OpenCV</span></div>
+        </div>
+        <div class="service">
+          <div class="no">03</div>
+          <h3>Embedded &amp; IoT</h3>
+          <p>Edge devices that sense and stream: ESP32 sensor fusion, MQTT telemetry and time-series backends for fleet-scale data.</p>
+          <div class="st tags"><span class="tag">ESP32</span><span class="tag">MQTT</span><span class="tag">Supabase</span></div>
+        </div>
+        <div class="service">
+          <div class="no">04</div>
+          <h3>Applied AI / ML</h3>
+          <p>On-device, offline AI: Whisper + LoRA fine-tuning and NLLB translation — $0 runtime, privacy by default.</p>
+          <div class="st tags"><span class="tag">Whisper</span><span class="tag">LoRA</span><span class="tag">FastAPI</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / PROJECTS -->
+  <section class="section wrap" id="work">
     <div class="sec-head">
-      <span class="sec-tag"><span class="hash">§</span> PROJECTS</span>
-      <h2 class="sec-title">Systems I've built</h2>
-      <span class="sec-rule"></span>
+      <span class="eyebrow">Selected work</span>
+      <h2 class="sec-title">Systems I've <em>built</em>.</h2>
+      <p class="sec-sub">Three flagship systems, taken from first commit to a working, tested pipeline.</p>
     </div>
 
-    <!-- Flagship -->
     <div class="feature">
       <div class="feature-top">
         <div>
-          <span class="flag"><span class="dot" style="width:6px;height:6px"></span>Flagship</span>
+          <span class="flag"><span class="dot" style="width:6px;height:6px;background:var(--accent)"></span>Flagship</span>
           <h3 class="ptitle">CARLA ADAS — Level&nbsp;3 Active Safety &amp; Autonomous Driving</h3>
           <div class="pmeta">2026 · Solo · Python / PyTorch / CARLA</div>
         </div>
       </div>
       <div class="feature-body">
         <p class="desc">An end-to-end autonomous-driving pipeline in the CARLA simulator: multi-sensor perception → <b>sensor fusion</b> → a <b>committed active-safety arbiter</b>, wrapped in an L3-style ODD/MRM layer and a safety-capped reinforcement-learning cruise controller. Built geometry-first and test-driven.</p>
-
         <div class="pgrid-2">
           <ul class="speclist">
             <li><b>Perception:</b> YOLOv8/v10 (FP16) + LiDAR clustering (DBSCAN) + lane detection + Kalman tracking; LiDAR→camera fusion for true metric range.</li>
             <li><b>Calibration-free LiDAR braking corridor</b> — brakes for any in-path obstacle whether or not YOLO labels it. A missed detection cannot cause a missed brake.</li>
-            <li><b>L3 framework:</b> ODD monitor + minimal-risk maneuver (TOR→MRM→SAFE_STOP); a DQN cruise controller (PyTorch) held under a hard safety cap.</li>
-            <li>Found &amp; fixed a collision-causing bug in the arbiter, then locked it with <b>179</b> simulator-free regression checks on GitHub Actions CI.</li>
+            <li><b>L3 framework:</b> ODD monitor + minimal-risk maneuver (TOR→MRM→SAFE_STOP); a DQN cruise controller held under a hard safety cap.</li>
+            <li>Found &amp; fixed a collision-causing bug, then locked it with <b>179</b> simulator-free regression checks on GitHub Actions CI.</li>
           </ul>
           <div class="fsm">
             <div class="cap">Committed active-safety arbiter</div>
@@ -179,12 +148,10 @@
             <p class="fsm-note">A committed state machine with hysteresis — <b>no brake↔evade oscillation</b>, and geometry always overrides the learned components.</p>
           </div>
         </div>
-
-        <a class="repo-btn" href="https://github.com/nhatduongchess-cloud/carla-adas-active-safety-project" target="_blank" rel="noopener">
+        <a class="btn btn-accent repo-btn" href="https://github.com/nhatduongchess-cloud/carla-adas-active-safety-project" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M9 19c-4 1.5-4-2-5-2m10 4v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.7 11.7 0 0 0-6.2 0C6.9 1.3 5.9 1.6 5.9 1.6a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.5 8c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V19"/></svg>
           View source on GitHub
         </a>
-
         <div class="tags">
           <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">OpenCV</span>
           <span class="tag">CARLA</span><span class="tag">YOLO</span><span class="tag">LiDAR</span>
@@ -193,45 +160,91 @@
       </div>
     </div>
 
-    <!-- Secondary grid -->
     <div class="pgrid">
       <article class="pcard">
-        <h3 class="ptitle">ByteLoop — Electrostatic TRWP Capture for EVs</h3>
+        <h3 class="ptitle">ByteLoop — TRWP Capture for EVs</h3>
         <div class="pmeta">May 2026 – Present · Embedded / IoT</div>
-        <p class="desc">Wheel-mounted electrostatic capture of tire &amp; road-wear particles, built around a real-time sensor→cloud pipeline modeled on AV perception and fleet telematics. An <b>ESP32</b> edge node fuses load-cell + high-voltage monitoring and streams <b>MQTT</b> telemetry to a Supabase time-series backend; a Flutter app turns processed data into fleet insight. Designed for Green SM's multi-vehicle pilot toward predictive maintenance and pollution heatmaps.</p>
-        <div class="tags">
-          <span class="tag">ESP32</span><span class="tag">IoT</span><span class="tag">MQTT</span>
-          <span class="tag">Supabase</span><span class="tag">Flutter</span>
-        </div>
+        <p class="desc">Wheel-mounted electrostatic capture of tire &amp; road-wear particles, built around a real-time sensor→cloud pipeline modeled on AV perception and fleet telematics. An <b>ESP32</b> edge node fuses load-cell + high-voltage monitoring and streams <b>MQTT</b> telemetry to a Supabase time-series backend; a Flutter app turns processed data into fleet insight.</p>
+        <div class="tags"><span class="tag">ESP32</span><span class="tag">IoT</span><span class="tag">MQTT</span><span class="tag">Supabase</span><span class="tag">Flutter</span></div>
       </article>
-
       <article class="pcard">
         <h3 class="ptitle">Neural Voice Console</h3>
         <div class="pmeta">Feb 2026 – Present · Applied AI</div>
-        <p class="desc">Fully offline speech-to-text + multilingual translation — no cloud, no API keys, <b>$0</b> runtime. FastAPI + custom front end, Whisper for VI/EN/DE. A LoRA adapter fine-tuned on ~4,000 Vietnamese samples (6.5 h) lifted accuracy <b>87.4% → 94.3%</b> in an 18 MB adapter (vs. 1.5 GB base); NLLB-200 for VI↔EN↔DE (<b>38.4</b> BLEU VI→EN). Hallucination detection, confidence scoring and summarization — without an LLM API.</p>
-        <div class="tags">
-          <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Whisper</span>
-          <span class="tag">LoRA</span><span class="tag">NLLB</span>
-        </div>
+        <p class="desc">Fully offline speech-to-text + multilingual translation — no cloud, no API keys, <b>$0</b> runtime. A LoRA adapter fine-tuned on ~4,000 Vietnamese samples lifted accuracy <b>87.4% → 94.3%</b> in an 18 MB adapter (vs. 1.5 GB base); NLLB-200 for VI↔EN↔DE (<b>38.4</b> BLEU). Hallucination detection and summarization without an LLM API.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Whisper</span><span class="tag">LoRA</span><span class="tag">NLLB</span></div>
       </article>
-
       <article class="pcard">
         <h3 class="ptitle">Calculus: Functions &amp; Limits</h3>
         <div class="pmeta">Sep – Nov 2025 · LaTeX</div>
         <p class="desc">Group academic report on the core principles of functions and limits — formal definitions, key theorems and rigorous proofs. Owned the <b>LaTeX</b> layout and technical writing: document structure, mathematical notation and proof formatting.</p>
-        <div class="tags">
-          <span class="tag">LaTeX</span><span class="tag">Mathematical Analysis</span><span class="tag">Technical Writing</span>
-        </div>
+        <div class="tags"><span class="tag">LaTeX</span><span class="tag">Mathematical Analysis</span><span class="tag">Technical Writing</span></div>
       </article>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section alt" id="experience">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Experience</span>
+        <h2 class="sec-title">Leadership &amp; <em>operations</em>.</h2>
+      </div>
+      <div class="ledger">
+        <article class="entry">
+          <div class="when">Nov 2025 – May 2026<span class="dur">7 months</span></div>
+          <div>
+            <h3 class="role">Logistics &amp; Finance Manager</h3>
+            <div class="org">Career Fair 2026 — Vietnamese-German University</div>
+            <p class="body">Led the Logistics &amp; Finance function for Career Fair 2026, a large student-run event connecting 1,000+ students with 30+ companies (SAP, MiTek, Wanek).</p>
+            <ul>
+              <li>Managed and allocated a <b>300M+ ₫</b> budget across all event operations over seven months.</li>
+              <li>Ran the full financial workflow, including supplier payments and VAT (red-invoice) documentation.</li>
+              <li>Led an <b>8-person team</b> across venue/vendor scouting and financial reporting.</li>
+              <li>Maintained financial compliance and accurate reporting across the full event lifecycle.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="entry">
+          <div class="when">Dec 2025<span class="dur">Ho Chi Minh City</span></div>
+          <div>
+            <h3 class="role">Student Volunteer</h3>
+            <div class="org">VGU Math Open Day</div>
+            <p class="body">Designed and led interactive activities, guiding <b>200+</b> secondary-school students through hands-on math experiences that made abstract concepts approachable.</p>
+          </div>
+        </article>
+        <article class="entry">
+          <div class="when">Oct 2025<span class="dur">Vietnam</span></div>
+          <div>
+            <h3 class="role">Volunteer Staff</h3>
+            <div class="org">Germany–Vietnam Green Science &amp; Innovation Conference</div>
+            <p class="body">Supported the conference marking 50 years of German–Vietnamese cooperation, guiding international delegates — first-hand experience of conference-level diplomacy and cross-cultural coordination.</p>
+          </div>
+        </article>
+        <article class="entry">
+          <div class="when">Aug 2019 – Aug 2022<span class="dur">3 years</span></div>
+          <div>
+            <h3 class="role">Student Class Representative</h3>
+            <div class="org">Dinh Thien Ly High School</div>
+            <p class="body">Represented the class in school-wide decisions for three years, working with teachers and peers to shape policies improving student life, and co-organized academic and social events.</p>
+          </div>
+        </article>
+        <article class="entry">
+          <div class="when">Aug 2019 – Aug 2022</div>
+          <div>
+            <h3 class="role">Competition Participant</h3>
+            <div class="org">City Excellent-Student Contest · 30/4 Olympiad · Chess</div>
+            <p class="body">Represented the school in academic and strategic competitions, sharpening analytical thinking, problem-solving and discipline under pressure.</p>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
   <!-- AWARDS -->
   <section class="section wrap" id="awards">
     <div class="sec-head">
-      <span class="sec-tag"><span class="hash">§</span> AWARDS</span>
-      <h2 class="sec-title">Recognition</h2>
-      <span class="sec-rule"></span>
+      <span class="eyebrow">Recognition</span>
+      <h2 class="sec-title">Awards &amp; <em>honors</em>.</h2>
     </div>
     <div class="awards">
       <div class="award">
@@ -261,85 +274,66 @@
     </div>
   </section>
 
-  <!-- EDUCATION -->
-  <section class="section wrap" id="education">
-    <div class="sec-head">
-      <span class="sec-tag"><span class="hash">§</span> EDUCATION</span>
-      <span class="sec-rule"></span>
-    </div>
-    <div class="edu">
-      <div class="edu-row">
-        <div>
-          <div class="inst">Vietnamese-German University (VGU)</div>
-          <div class="deg">B.S. Smart Mobility Engineering</div>
-          <div class="act">Dual degree with HAW Hamburg, Germany · full-tuition merit scholarship.</div>
-        </div>
-        <div class="when">Sep 2025 – Sep 2029</div>
+  <!-- EDUCATION + SKILLS -->
+  <section class="section alt" id="skills">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Background</span>
+        <h2 class="sec-title">Education &amp; <em>skills</em>.</h2>
       </div>
-      <div class="edu-row">
-        <div>
-          <div class="inst">Dinh Thien Ly High School</div>
-          <div class="deg">Secondary Diploma</div>
-          <div class="act">Chess · Head of Finance · Event Committee · Federation Student Committee · Cerberus Football Team · Charity Works · Geography select team.</div>
+
+      <div class="edu" style="margin-bottom:36px;">
+        <div class="edu-row">
+          <div>
+            <div class="inst">Vietnamese-German University (VGU)</div>
+            <div class="deg">B.S. Smart Mobility Engineering</div>
+            <div class="act">Dual degree with HAW Hamburg, Germany · full-tuition merit scholarship.</div>
+          </div>
+          <div class="when">Sep 2025 – Sep 2029</div>
         </div>
-        <div class="when">Aug 2018 – Sep 2025</div>
+        <div class="edu-row">
+          <div>
+            <div class="inst">Dinh Thien Ly High School</div>
+            <div class="deg">Secondary Diploma</div>
+            <div class="act">Chess · Head of Finance · Event Committee · Federation Student Committee · Cerberus Football Team · Charity Works · Geography select team.</div>
+          </div>
+          <div class="when">Aug 2018 – Sep 2025</div>
+        </div>
+      </div>
+
+      <div class="skillmatrix">
+        <div class="skillcat"><h3>Languages</h3><div class="tags"><span class="tag">Python</span><span class="tag">C/C++ (Embedded)</span><span class="tag">HTML/CSS/JS</span><span class="tag">LaTeX</span></div></div>
+        <div class="skillcat"><h3>Autonomous &amp; CV</h3><div class="tags"><span class="tag">CARLA</span><span class="tag">PyTorch</span><span class="tag">OpenCV</span><span class="tag">YOLO</span><span class="tag">LiDAR</span><span class="tag">Sensor Fusion</span></div></div>
+        <div class="skillcat"><h3>AI / ML</h3><div class="tags"><span class="tag">Whisper</span><span class="tag">LoRA Fine-tuning</span><span class="tag">NLLB</span><span class="tag">Generative AI</span></div></div>
+        <div class="skillcat"><h3>IoT &amp; Embedded</h3><div class="tags"><span class="tag">ESP32</span><span class="tag">MQTT</span><span class="tag">Edge Computing</span></div></div>
+        <div class="skillcat"><h3>Backend &amp; Data</h3><div class="tags"><span class="tag">FastAPI</span><span class="tag">Supabase</span><span class="tag">Time-series DB</span></div></div>
+        <div class="skillcat"><h3>Leadership</h3><div class="tags"><span class="tag">Budget Management</span><span class="tag">Team Leadership</span><span class="tag">Event Operations</span></div></div>
+      </div>
+
+      <div class="certs" style="margin-top:26px;">
+        <span class="cert">IELTS <i>— IDP · 2025–2027</i></span>
+        <span class="cert">Digital Entrepreneurship <i>— GIZ</i></span>
+        <span class="cert">AI &amp; Emerging Technologies <i>— GIZ</i></span>
+        <span class="cert">Unpacking AI <i>— GIZ</i></span>
+        <span class="cert">Understanding Data <i>— GIZ</i></span>
+        <span class="cert">Digital Safety &amp; Security <i>— GIZ</i></span>
+        <span class="cert">Generative AI <i>— LinkedIn</i></span>
       </div>
     </div>
   </section>
 
-  <!-- CERTIFICATIONS -->
-  <section class="section wrap" id="certs">
-    <div class="sec-head">
-      <span class="sec-tag"><span class="hash">§</span> CERTIFICATIONS</span>
-      <span class="sec-rule"></span>
-    </div>
-    <div class="certs">
-      <span class="cert">IELTS <i>— IDP · 2025–2027</i></span>
-      <span class="cert">Foundations of Digital Entrepreneurship <i>— GIZ</i></span>
-      <span class="cert">Intro to AI &amp; Emerging Technologies <i>— GIZ</i></span>
-      <span class="cert">Unpacking AI <i>— GIZ</i></span>
-      <span class="cert">Understanding Data <i>— GIZ</i></span>
-      <span class="cert">Digital Safety &amp; Security <i>— GIZ</i></span>
-      <span class="cert">Computing Skills for Business <i>— GIZ</i></span>
-      <span class="cert">What Is Generative AI? <i>— LinkedIn</i></span>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="section wrap" id="skills">
-    <div class="sec-head">
-      <span class="sec-tag"><span class="hash">§</span> SKILLS</span>
-      <h2 class="sec-title">Technical stack</h2>
-      <span class="sec-rule"></span>
-    </div>
-    <div class="skillmatrix">
-      <div class="skillcat">
-        <h3>Languages</h3>
-        <div class="tags"><span class="tag">Python</span><span class="tag">C/C++ (Embedded)</span><span class="tag">HTML/CSS/JS</span><span class="tag">LaTeX</span></div>
-      </div>
-      <div class="skillcat">
-        <h3>Autonomous &amp; CV</h3>
-        <div class="tags"><span class="tag">CARLA</span><span class="tag">PyTorch</span><span class="tag">OpenCV</span><span class="tag">YOLO</span><span class="tag">LiDAR</span><span class="tag">Sensor Fusion</span><span class="tag">ADAS / AEB</span></div>
-      </div>
-      <div class="skillcat">
-        <h3>AI / ML</h3>
-        <div class="tags"><span class="tag">Whisper</span><span class="tag">LoRA Fine-tuning</span><span class="tag">NLLB</span><span class="tag">Generative AI</span></div>
-      </div>
-      <div class="skillcat">
-        <h3>IoT &amp; Embedded</h3>
-        <div class="tags"><span class="tag">ESP32</span><span class="tag">MQTT</span><span class="tag">Edge Computing</span><span class="tag">Sensor Fusion</span></div>
-      </div>
-      <div class="skillcat">
-        <h3>Backend &amp; Data</h3>
-        <div class="tags"><span class="tag">FastAPI</span><span class="tag">Supabase</span><span class="tag">Time-series DB</span><span class="tag">Big Data</span></div>
-      </div>
-      <div class="skillcat">
-        <h3>App &amp; Frontend</h3>
-        <div class="tags"><span class="tag">Flutter</span><span class="tag">uvicorn / ngrok</span></div>
-      </div>
-      <div class="skillcat">
-        <h3>Leadership</h3>
-        <div class="tags"><span class="tag">Budget Management</span><span class="tag">Team Leadership</span><span class="tag">Event Operations</span><span class="tag">Technical Writing</span></div>
+  <!-- CONTACT CTA -->
+  <section class="section wrap" id="contact">
+    <div class="cta">
+      <span class="eyebrow">Let's talk</span>
+      <h2>Have an internship<br>or project in mind?</h2>
+      <p>I'm open to ADAS, autonomous-driving and software internships. The fastest way to reach me is email — I usually reply within a day.</p>
+      <div class="hero-cta">
+        <a class="btn btn-dark" href="mailto:nhatduongchess@gmail.com">
+          <svg viewBox="0 0 24 24" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          nhatduongchess@gmail.com
+        </a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/quang-nhat-duong-95208b382/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </section>
@@ -348,13 +342,14 @@
 
 <footer class="foot">
   <div class="wrap foot-inner">
-    <div class="sig"><span class="sq" style="display:inline-block;width:10px;height:10px;border:2px solid var(--accent);border-radius:2px;transform:rotate(45deg)"></span> © 2026 Quang Nhat Duong</div>
-    <div>
-      <a href="mailto:nhatduongchess@gmail.com">Email</a> ·
-      <a href="https://www.linkedin.com/in/quang-nhat-duong-95208b382/" target="_blank" rel="noopener">LinkedIn</a> ·
-      <a href="https://github.com/nhatduongchess-cloud" target="_blank" rel="noopener">GitHub</a> ·
+    <div class="brand">Quang<span class="dotm">.</span></div>
+    <div class="links">
+      <a href="mailto:nhatduongchess@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/quang-nhat-duong-95208b382/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/nhatduongchess-cloud" target="_blank" rel="noopener">GitHub</a>
       <a href="index.html">Tiếng Việt</a>
     </div>
+    <div>© 2026 Quang Nhat Duong</div>
   </div>
 </footer>
 
