@@ -55,9 +55,9 @@
   </div>
 
   <div class="stats">
-    <div class="stat"><div class="n">3</div><div class="l">Hệ thống chủ lực</div></div>
-    <div class="stat"><div class="n"><b>179</b></div><div class="l">Kiểm thử an toàn tự động</div></div>
-    <div class="stat"><div class="n">94.3<span style="font-size:.55em">%</span></div><div class="l">Độ chính xác giọng nói</div></div>
+    <div class="stat"><div class="n">4</div><div class="l">Hệ thống đã xây</div></div>
+    <div class="stat"><div class="n"><b>Top 14</b></div><div class="l">FPT Automotive Hackathon 2026</div></div>
+    <div class="stat"><div class="n">179</div><div class="l">Kiểm thử an toàn tự động</div></div>
     <div class="stat"><div class="n">100<span style="font-size:.55em">%</span></div><div class="l">Học bổng học phí</div></div>
   </div>
 </header>
@@ -162,6 +162,42 @@
       </div>
     </div>
 
+    <div class="feature">
+      <div class="feature-top">
+        <div>
+          <span class="flag"><span class="dot" style="width:6px;height:6px;background:var(--accent)"></span>FPT Automotive Hackathon 2026 · Top 14</span>
+          <h3 class="ptitle">GuardianCo-Pilot — Guardian AI Operating System</h3>
+          <div class="pmeta">2026 · Đội 5 người · Python / YOLOv8 / MediaPipe / Phi-3</div>
+        </div>
+      </div>
+      <div class="feature-body">
+        <p class="desc">Một <b>lớp AI Operating System phía trên ADAS</b> cho VinFast — đọc cả con đường lẫn tài xế và giải thích mọi cảnh báo, chạy hoàn toàn trên edge. Hợp nhất perception, world model, planner bị ràng buộc bởi safety kernel tất định, cá nhân hóa tài xế và HMI trong cabin, khép lại bằng vòng lặp học liên tục.</p>
+        <div class="pgrid-2">
+          <ul class="speclist">
+            <li><b>Giám sát rủi ro va chạm:</b> đảo ngược công thức chấm điểm TTC của BTC, rồi kết hợp YOLOv8s, độ sâu stereo SGBM đã hiệu chuẩn, cổng collision-cone và tracking — nâng điểm composite <b>19,70 → 65,60</b> (65,23 leave-one-trip-out).</li>
+            <li><b>Trí tuệ tài xế:</b> so sánh (ablation) bốn mô hình và chọn một rule engine dựa trên PERCLOS có thể giải thích, đạt <b>84,5</b> LOTO — vượt CNN (18,5) vốn overfit vào danh tính của chỉ sáu tài xế.</li>
+            <li><b>Giải thích theo thiết kế:</b> mọi quyết định nêu lý do bằng ngôn ngữ tự nhiên — <i>"microsleep: mắt nhắm 68% trong 10&nbsp;giây qua"</i> — trực tiếp giải quyết niềm tin của tài xế.</li>
+            <li><b>Triển khai được trên edge:</b> một lần submit đầy đủ chạy từ cache trong <b>9&nbsp;giây</b> và chỉ trên CPU (nhanh hơn 38× khi có GPU), không cần dữ liệu ngoài hay cloud.</li>
+          </ul>
+          <div class="fsm">
+            <div class="cap">Điểm rủi ro va chạm · đo thực tế</div>
+            <div class="fsm-flow">
+              <span class="state">19,70</span><span class="arrow">→</span>
+              <span class="state">46,4</span><span class="arrow">→</span>
+              <span class="state">59,1</span><span class="arrow">→</span>
+              <span class="state commit">65,60</span>
+            </div>
+            <p class="fsm-note">Bốn bước đo trên scorer của BTC — kiểm định leave-one-trip-out, không phải in-sample.</p>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">YOLOv8</span><span class="tag">OpenCV</span>
+          <span class="tag">Stereo Depth</span><span class="tag">MediaPipe</span><span class="tag">scikit-learn</span>
+          <span class="tag">PyTorch</span><span class="tag">FastAPI</span><span class="tag">Edge AI</span>
+        </div>
+      </div>
+    </div>
+
     <div class="pgrid">
       <article class="pcard">
         <h3 class="ptitle">ByteLoop — Thu gom TRWP cho xe điện</h3>
@@ -249,6 +285,12 @@
       <h2 class="sec-title">Giải thưởng &amp; <em>thành tích</em>.</h2>
     </div>
     <div class="awards">
+      <div class="award">
+        <div class="rank"><b>Top 14</b> Finalist</div>
+        <div class="ev">FPT Automotive Hackathon 2026</div>
+        <div class="dt">2026</div>
+        <p class="note">Guardian Co-Pilot — hệ điều hành AI cho ADAS, giải thích được và triển khai trên edge.</p>
+      </div>
       <div class="award">
         <div class="rank"><b>Top 30</b> Finalist</div>
         <div class="ev">Asian Hackathon for Green Future 2026</div>

@@ -296,16 +296,14 @@ em{font-style:normal;color:var(--accent);}
 /* ============================================================
    Awards
    ============================================================ */
-.awards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--surface);}
-.award{padding:22px 24px;border-left:1px solid var(--line);}
-.award:first-child{border-left:0;}
+.awards{display:grid;grid-template-columns:repeat(auto-fit,minmax(214px,1fr));gap:16px;}
+.award{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px;}
 .award .rank{font-family:var(--display);font-weight:700;font-size:21px;letter-spacing:-.01em;color:var(--ink);line-height:1.1;}
 .award .rank b{color:var(--accent);}
 .award .ev{font-family:var(--mono);font-size:12px;color:var(--accent-ink);margin-top:9px;line-height:1.4;}
 .award .dt{font-family:var(--mono);font-size:11px;color:var(--faint);margin-top:4px;}
 .award .note{font-size:13.5px;color:var(--sub);margin-top:11px;}
-@media (max-width:900px){ .awards{grid-template-columns:repeat(2,1fr);} .award{border-top:1px solid var(--line);} .award:nth-child(-n+2){border-top:0;} .award:nth-child(odd){border-left:0;} }
-@media (max-width:460px){ .awards{grid-template-columns:1fr;} .award{border-left:0;} }
+@media (max-width:460px){ .awards{grid-template-columns:1fr;} }
 
 /* ============================================================
    Education / certs / skills

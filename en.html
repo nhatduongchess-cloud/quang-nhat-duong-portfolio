@@ -55,9 +55,9 @@
   </div>
 
   <div class="stats">
-    <div class="stat"><div class="n">3</div><div class="l">Flagship systems delivered</div></div>
-    <div class="stat"><div class="n"><b>179</b></div><div class="l">Automated safety checks</div></div>
-    <div class="stat"><div class="n">94.3<span style="font-size:.55em">%</span></div><div class="l">Voice-model accuracy</div></div>
+    <div class="stat"><div class="n">4</div><div class="l">Systems delivered</div></div>
+    <div class="stat"><div class="n"><b>Top 14</b></div><div class="l">FPT Automotive Hackathon 2026</div></div>
+    <div class="stat"><div class="n">179</div><div class="l">Automated safety checks</div></div>
     <div class="stat"><div class="n">100<span style="font-size:.55em">%</span></div><div class="l">Merit scholarship</div></div>
   </div>
 </header>
@@ -162,6 +162,42 @@
       </div>
     </div>
 
+    <div class="feature">
+      <div class="feature-top">
+        <div>
+          <span class="flag"><span class="dot" style="width:6px;height:6px;background:var(--accent)"></span>FPT Automotive Hackathon 2026 · Top 14</span>
+          <h3 class="ptitle">GuardianCo-Pilot — Guardian AI Operating System</h3>
+          <div class="pmeta">2026 · Team of 5 · Python / YOLOv8 / MediaPipe / Phi-3</div>
+        </div>
+      </div>
+      <div class="feature-body">
+        <p class="desc">An <b>AI Operating System layer above ADAS</b> for VinFast that reads both the road and the driver and makes every warning explainable — running entirely on the edge. It unifies perception, a world model, a planner constrained by a deterministic safety kernel, driver personalization and an in-cabin HMI, closed by a continuous learning loop.</p>
+        <div class="pgrid-2">
+          <ul class="speclist">
+            <li><b>Collision-risk monitor:</b> reverse-engineered the organiser's TTC scoring formula, then combined YOLOv8s detection, calibrated SGBM stereo depth, collision-cone gating and tracking — lifting the composite score <b>19.70 → 65.60</b> (65.23 leave-one-trip-out).</li>
+            <li><b>Driver intelligence:</b> ablated four models and shipped an explainable PERCLOS-based rule engine at <b>84.5</b> LOTO — outperforming a CNN (18.5) that had overfit to just six drivers' identities.</li>
+            <li><b>Explainable by design:</b> every decision states its reason in plain language — <i>"microsleep: eyes closed 68% of the last 10&nbsp;s"</i> — directly addressing driver trust.</li>
+            <li><b>Edge-deployable:</b> a full submission runs from warm cache in <b>9&nbsp;s</b> and on CPU alone (38× GPU speed-up), with no external data or cloud.</li>
+          </ul>
+          <div class="fsm">
+            <div class="cap">Collision-risk score · measured</div>
+            <div class="fsm-flow">
+              <span class="state">19.70</span><span class="arrow">→</span>
+              <span class="state">46.4</span><span class="arrow">→</span>
+              <span class="state">59.1</span><span class="arrow">→</span>
+              <span class="state commit">65.60</span>
+            </div>
+            <p class="fsm-note">Four measured steps against the organiser's scorer — validated leave-one-trip-out, not in-sample.</p>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">YOLOv8</span><span class="tag">OpenCV</span>
+          <span class="tag">Stereo Depth</span><span class="tag">MediaPipe</span><span class="tag">scikit-learn</span>
+          <span class="tag">PyTorch</span><span class="tag">FastAPI</span><span class="tag">Edge AI</span>
+        </div>
+      </div>
+    </div>
+
     <div class="pgrid">
       <article class="pcard">
         <h3 class="ptitle">ByteLoop — TRWP Capture for EVs</h3>
@@ -249,6 +285,12 @@
       <h2 class="sec-title">Awards &amp; <em>honors</em>.</h2>
     </div>
     <div class="awards">
+      <div class="award">
+        <div class="rank"><b>Top 14</b> Finalist</div>
+        <div class="ev">FPT Automotive Hackathon 2026</div>
+        <div class="dt">2026</div>
+        <p class="note">Guardian Co-Pilot — an explainable, edge-deployable AI operating system for ADAS.</p>
+      </div>
       <div class="award">
         <div class="rank"><b>Top 30</b> Finalist</div>
         <div class="ev">Asian Hackathon for Green Future 2026</div>
