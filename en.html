@@ -85,11 +85,12 @@
         <div class="work-title">GuardianCo-Pilot — Guardian AI Operating System</div>
         <span class="work-year">2026</span>
       </div>
-      <p class="work-desc">A driver-monitoring and active-safety layer above ADAS that reads the road and the driver together, then explains every intervention in one sentence — in Vietnamese or English, in ~0.05 ms against a 2 s budget. A bounded learning loop adapts the drowsiness threshold to one driver without letting anyone tune the car into silence. Runs entirely on the edge.</p>
+      <p class="work-desc">A driver-monitoring and active-safety layer above ADAS that reads the road and the driver together, catches a drowsy or micro-sleeping driver in 99.2% of impaired frames, then explains every intervention in one sentence — in Vietnamese or English, in ~0.05 ms against a 2 s budget. A bounded learning loop adapts the drowsiness threshold to one driver without letting anyone tune the car into silence. Runs entirely on the edge.</p>
       <div class="chips">
-        <span class="chip">Collision score 19.70 → 65.60</span><span class="chip">Driver-state 84.5 LOTO</span>
+        <span class="chip">Collision score 19.70 → 65.60</span><span class="chip">99.2% impairment caught</span>
         <span class="chip">9&nbsp;s edge inference</span><span class="chip">YOLOv8 · MediaPipe · Phi-3</span>
       </div>
+      <a class="src-link" href="guardian-drowsiness.html">See the detection demo ↗</a>
       <a class="src-link" href="https://github.com/nhatduongchess-cloud/guardian-co-pilot" target="_blank" rel="noopener">View source ↗</a>
     </div>
 

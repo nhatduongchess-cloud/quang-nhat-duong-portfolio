@@ -1,0 +1,13 @@
+# Scratch from editing sessions — not part of the site.
+patch_*.py
+probe_*.ps1
+check_*.ps1
+commitmsg.txt
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
