@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Quang Nhat Duong — Smart Mobility Engineer</title>
-<meta name="description" content="Quang Nhat Duong — Smart Mobility Engineering student building autonomous-driving, computer-vision and embedded systems. L3 ADAS in CARLA, offline voice AI, real-time EV telemetry.">
+<meta name="description" content="Quang Nhat Duong — Smart Mobility Engineering student building active-safety and driver-monitoring systems. Level 3 ADAS in CARLA, evaluated against a live simulator; drowsiness detection evaluated on 60 unseen drivers.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
@@ -12,18 +12,20 @@
 </head>
 <body>
 
+<a class="skip" href="#main">Skip to content</a>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="brand" href="#top">quang<span class="d">.</span>duong</a>
-    <nav class="topnav">
-      <a href="#focus">Focus</a>
+    <nav class="topnav" aria-label="Sections">
       <a href="#work">Work</a>
+      <a href="#focus">Focus</a>
       <a href="#experience">Experience</a>
-      <a href="#awards">Awards</a>
+      <a href="#background">Background</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="controls">
-      <a class="icon-btn" href="index.html" title="Tiếng Việt">VI</a>
+      <a class="icon-btn" href="index.html" title="Tiếng Việt" hreflang="vi">VI</a>
       <button class="icon-btn" data-theme-toggle aria-label="Toggle color theme"><span class="tstate">DARK</span></button>
     </div>
   </div>
@@ -34,7 +36,7 @@
     <div class="hero-main">
       <div class="eyebrow">Smart Mobility Engineer</div>
       <h1 class="hero-name">Quang Nhat Duong</h1>
-      <p class="hero-lead">I build autonomous-driving, computer-vision and embedded systems — from a Level&nbsp;3 ADAS stack in CARLA to on-device voice AI and real-time EV telemetry. Test-driven, safety-first engineering.</p>
+      <p class="hero-lead">I build active-safety and driver-monitoring systems, and I test them hard enough to find out where they fail.</p>
       <div class="hero-meta">VGU&nbsp;×&nbsp;HAW&nbsp;Hamburg &nbsp;·&nbsp; Ho&nbsp;Chi&nbsp;Minh&nbsp;City &nbsp;·&nbsp; <b>Available for internships</b></div>
       <div class="hero-links">
         <a href="mailto:nhatduongchess@gmail.com">Email&nbsp;↗</a>
@@ -43,62 +45,178 @@
       </div>
     </div>
     <div class="hero-portrait">
-      <img src="assets/portrait.jpg" alt="Portrait of Quang Nhat Duong" width="300" height="360">
+      <img src="assets/portrait.jpg" alt="Portrait of Quang Nhat Duong" width="280" height="336">
     </div>
   </div>
 </header>
 
-<main>
-
-  <!-- FOCUS -->
-  <section class="section wrap" id="focus">
-    <h2 class="sec-label">Focus areas</h2>
-    <div class="focus">
-      <div class="focus-item"><span class="focus-no">01</span><div><h3>Autonomous Driving &amp; ADAS</h3><p>Perception → sensor fusion → committed active-safety arbitration, engineered geometry-first and validated in CARLA.</p></div></div>
-      <div class="focus-item"><span class="focus-no">02</span><div><h3>Computer Vision &amp; Perception</h3><p>Real-time detection, tracking and lane estimation — YOLO, LiDAR clustering and Kalman fusion into metric range.</p></div></div>
-      <div class="focus-item"><span class="focus-no">03</span><div><h3>Embedded &amp; IoT Systems</h3><p>Edge devices that sense and stream: ESP32 sensor fusion, MQTT telemetry and time-series backends.</p></div></div>
-      <div class="focus-item"><span class="focus-no">04</span><div><h3>Applied AI / Machine Learning</h3><p>On-device, offline AI: Whisper with LoRA fine-tuning and NLLB translation — privacy by design, zero runtime cost.</p></div></div>
+<div class="wrap">
+  <div class="evidence">
+    <div class="ev">
+      <div class="ev-v">204</div>
+      <div class="ev-k">CARLA-free safety checks, green on every push —
+        <a href="https://github.com/nhatduongchess-cloud/carla-adas-active-safety-project/actions" target="_blank" rel="noopener">CI</a></div>
     </div>
-  </section>
+    <div class="ev">
+      <div class="ev-v">43 / 45</div>
+      <div class="ev-k">scenarios passed against a live simulator —
+        <a href="https://github.com/nhatduongchess-cloud/carla-adas-active-safety-project/blob/main/docs/benchmarks/README.md" target="_blank" rel="noopener">reports</a></div>
+    </div>
+    <div class="ev">
+      <div class="ev-v">60</div>
+      <div class="ev-k">unseen drivers in the drowsiness evaluation —
+        <a href="https://github.com/nhatduongchess-cloud/guardian-co-pilot/blob/main/docs/opendata/rldd_report.md" target="_blank" rel="noopener">result</a></div>
+    </div>
+    <div class="ev">
+      <div class="ev-v">100%</div>
+      <div class="ev-k">merit tuition scholarship, VGU 2025–29</div>
+    </div>
+  </div>
+</div>
+
+<main id="main">
 
   <!-- WORK -->
   <section class="section wrap" id="work">
     <h2 class="sec-label">Selected work</h2>
 
-    <div class="work-item">
-      <div class="work-head">
-        <div class="work-title">CARLA ADAS — Level 3 Active Safety &amp; Autonomous Driving</div>
-        <span class="work-year">2026</span>
+    <article class="case">
+      <div class="case-head">
+        <h3 class="case-title">CARLA ADAS — active safety and Level&nbsp;3 automation</h3>
+        <span class="case-year">2026</span>
       </div>
-      <p class="work-desc">An end-to-end autonomous-driving pipeline in the CARLA simulator: multi-sensor perception, a calibration-free geometry-first braking corridor, a committed safety arbiter (NORMAL → FOLLOW → EVADE → EMERGENCY_BRAKE) and a safety-capped reinforcement-learning cruise controller.</p>
+      <p class="case-lede">An end-to-end driving stack in the CARLA simulator: multi-sensor perception, a
+        geometry-first emergency braking corridor swept through LiDAR rather than gated on a detector, a committed
+        safety arbiter, and a reinforcement-learned cruise controller that can only ever propose a speed under a
+        hard safety cap.</p>
+
+      <div class="metrics">
+        <div class="metric">
+          <div class="m-k">Scenario suite</div>
+          <div class="m-v">43 / 45</div>
+          <div class="m-n">Full catalog × 3 seeds against a live server. Zero collisions and zero sensor-frame
+            errors across all 90 runs.</div>
+        </div>
+        <div class="metric">
+          <div class="m-k">Weather matrix</div>
+          <div class="m-v">28 / 30</div>
+          <div class="m-n">Core scenarios × 5 weather profiles. Both suites fail on the same marginal
+            scenario, not on a range of them.</div>
+        </div>
+        <div class="metric">
+          <div class="m-k">Offline test suite</div>
+          <div class="m-v">204 + 189</div>
+          <div class="m-n">Safety self-test checks plus unit tests, all run in CI without a simulator,
+            alongside lint and static typing.</div>
+        </div>
+      </div>
+
+      <p class="caveat">An earlier run of the same suite reported <b>45/45</b>. That number was measured with the
+        reaction-delay criterion effectively switched off — the harness had no hazard origin to time from, so it
+        could not fail. Once it was fixed, two cases started failing. The lower number is the honest one and it is
+        the one published, with the open finding written up rather than tuned away.</p>
+
+      <p class="decision"><b>A decision I made:</b> braking triggers on metric geometry, not on detector confidence,
+        so a missed bounding box cannot by itself cause a missed brake. The learned controller sits underneath that
+        envelope and can never widen it.</p>
+
       <div class="chips">
-        <span class="chip">179 tests in CI</span><span class="chip">Geometry-first AEB</span>
-        <span class="chip">DQN · safety-capped</span><span class="chip">YOLO · LiDAR · Radar</span>
+        <span class="chip">geometry-first AEB</span><span class="chip">ODD → TOR → MRM</span>
+        <span class="chip">DQN under a safety cap</span><span class="chip">YOLO · LiDAR · radar</span>
+        <span class="chip">fail-closed teardown</span>
       </div>
-      <a class="src-link" href="https://github.com/nhatduongchess-cloud/carla-adas-active-safety-project" target="_blank" rel="noopener">View source ↗</a>
-    </div>
-
-    <hr class="rule">
-
-    <div class="work-item">
-      <div class="work-head">
-        <div class="work-title">GuardianCo-Pilot — Guardian AI Operating System</div>
-        <span class="work-year">2026</span>
+      <div class="sources">
+        <a href="https://github.com/nhatduongchess-cloud/carla-adas-active-safety-project" target="_blank" rel="noopener">Source&nbsp;↗</a>
+        <a href="https://github.com/nhatduongchess-cloud/carla-adas-active-safety-project/blob/main/docs/benchmarks/README.md" target="_blank" rel="noopener">Benchmark reports&nbsp;↗</a>
+        <a href="https://github.com/nhatduongchess-cloud/carla-adas-active-safety-project/blob/main/docs/ARCHITECTURE.md" target="_blank" rel="noopener">Architecture&nbsp;↗</a>
       </div>
-      <p class="work-desc">A driver-monitoring and active-safety layer above ADAS that reads the road and the driver together, catches a drowsy or micro-sleeping driver in 99.2% of impaired frames, then explains every intervention in one sentence — in Vietnamese or English, in ~0.05 ms against a 2 s budget. A bounded learning loop adapts the drowsiness threshold to one driver without letting anyone tune the car into silence. Runs entirely on the edge.</p>
+    </article>
+
+    <article class="case">
+      <div class="case-head">
+        <h3 class="case-title">Guardian Co-Pilot — driver monitoring</h3>
+        <span class="case-year">2026</span>
+      </div>
+      <p class="case-lede">A driver-state layer that sits above the ADAS and reads the person as well as the road:
+        eyelid closure over a rolling window, the longest unbroken closure, and jaw opening — then explains every
+        intervention in one sentence. Runs entirely on the edge.</p>
+
+      <div class="metrics">
+        <div class="metric">
+          <div class="m-k">60 unseen drivers</div>
+          <div class="m-v">0.53</div>
+          <div class="m-n">Held-out macro-F1, recurrent model, subject-disjoint 5-fold. The hand-written rule
+            scores 0.51 on the same split.</div>
+        </div>
+        <div class="metric">
+          <div class="m-k">Overfit gap</div>
+          <div class="m-v">+0.20</div>
+          <div class="m-n">In-sample minus held-out. A gradient-boosted baseline scores 1.00 in sample and
+            0.51 held out — a gap of +0.49.</div>
+        </div>
+        <div class="metric">
+          <div class="m-k">Cross-dataset control</div>
+          <div class="m-v warn">0.99 → 0.49</div>
+          <div class="m-n">An image classifier trained with a random frame split, then tested on a different
+            dataset. It lands on chance.</div>
+        </div>
+      </div>
+
+      <p class="caveat">Read the first column as the real result: on drivers the model has never seen, this problem
+        is <b>hard</b>, and the honest score is near the low end. The control experiment in the third column is the
+        reason the numbers are reported this way — the same pipeline evaluated carelessly would have produced 99%,
+        and that 99% would have meant nothing.</p>
+
+      <p class="decision"><b>A decision I made:</b> validation folds are split by driver, not by frame. Splitting by
+        frame puts the same person on both sides and turns a memorised face into an apparent result.</p>
+
+      <p class="decision">A separate rule-based engine, measured frame by frame on <b>6 labelled drives</b>
+        (3,600 frames), catches <b>99.2%</b> of impairment frames with a <b>9.8%</b> false-alarm rate and 1.05&nbsp;s
+        median lag. Six drives is a demo, not a generalisation claim — the timeline for every drive, including where
+        it disagrees with the ground truth, is on the demo page.</p>
+
       <div class="chips">
-        <span class="chip">Collision score 19.70 → 65.60</span><span class="chip">99.2% impairment caught</span>
-        <span class="chip">9&nbsp;s edge inference</span><span class="chip">YOLOv8 · MediaPipe · Phi-3</span>
+        <span class="chip">subject-disjoint folds</span><span class="chip">PERCLOS</span>
+        <span class="chip">GRU · sequence model</span><span class="chip">MediaPipe</span>
+        <span class="chip">on-device</span>
       </div>
-      <a class="src-link" href="guardian-drowsiness.html">See the detection demo ↗</a>
-      <a class="src-link" href="https://github.com/nhatduongchess-cloud/guardian-co-pilot" target="_blank" rel="noopener">View source ↗</a>
-    </div>
-
-    <hr class="rule">
+      <div class="sources">
+        <a href="guardian-drowsiness.html">Detection demo&nbsp;↗</a>
+        <a href="https://github.com/nhatduongchess-cloud/guardian-co-pilot" target="_blank" rel="noopener">Source&nbsp;↗</a>
+        <a href="https://github.com/nhatduongchess-cloud/guardian-co-pilot/blob/main/docs/opendata/rldd_report.md" target="_blank" rel="noopener">Evaluation report&nbsp;↗</a>
+      </div>
+    </article>
 
     <div class="mini-grid">
-      <div class="mini"><h3>ByteLoop — TRWP Capture for EVs</h3><p>Wheel-mounted electrostatic particle capture with an ESP32 → MQTT → Supabase telemetry pipeline and a Flutter fleet app.</p></div>
-      <div class="mini"><h3>Neural Voice Console</h3><p>Fully offline speech-to-text + translation; a LoRA adapter lifted accuracy 87.4% → 94.3% at zero runtime cost.</p></div>
+      <div class="mini">
+        <h3>ByteLoop — EV tyre-wear particle capture</h3>
+        <p>Wheel-mounted electrostatic capture for tyre and road-wear particles, with an ESP32 → MQTT → Supabase
+          pipeline and a Flutter app for fleet operators.</p>
+      </div>
+      <div class="mini">
+        <h3>Neural Voice Console</h3>
+        <p>Speech-to-text and translation running fully offline, so no audio leaves the device: Whisper with a
+          LoRA adapter, NLLB for translation, zero runtime cost.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOCUS -->
+  <section class="section wrap" id="focus">
+    <h2 class="sec-label">What I work on</h2>
+    <div class="band">
+      <div class="band-item"><span class="band-no">01</span>
+        <h3>Autonomous driving &amp; ADAS</h3>
+        <p>Perception, sensor fusion and committed active-safety arbitration, validated in simulation.</p></div>
+      <div class="band-item"><span class="band-no">02</span>
+        <h3>Computer vision &amp; perception</h3>
+        <p>Detection, tracking and lane estimation — resolved into metric range, not just boxes.</p></div>
+      <div class="band-item"><span class="band-no">03</span>
+        <h3>Embedded &amp; IoT</h3>
+        <p>Edge devices that sense and stream: ESP32 fusion, MQTT telemetry, time-series backends.</p></div>
+      <div class="band-item"><span class="band-no">04</span>
+        <h3>Applied machine learning</h3>
+        <p>On-device models, and the evaluation discipline that tells you whether they actually work.</p></div>
     </div>
   </section>
 
@@ -111,7 +229,8 @@
         <div>
           <div class="role">Logistics &amp; Finance Manager</div>
           <div class="org">Career Fair 2026 — Vietnamese-German University</div>
-          <div class="body">Led Logistics &amp; Finance for a 1,000+ student event with 30+ companies (SAP, MiTek, Wanek) — a <b>300M+&nbsp;₫</b> budget and an <b>8-person team</b> over seven months.</div>
+          <div class="body">Ran logistics and finance for a 1,000+ student event with 30+ companies including SAP,
+            MiTek and Wanek — a budget over <b>300 million ₫</b> and a team of <b>8</b>, across seven months.</div>
         </div>
       </div>
       <div class="entry">
@@ -119,38 +238,40 @@
         <div>
           <div class="role">Student Volunteer</div>
           <div class="org">VGU Math Open Day · Germany–Vietnam Green Science Conference</div>
-          <div class="body">Guided <b>200+</b> students through hands-on mathematics, and supported an international bilateral science conference.</div>
+          <div class="body">Guided <b>200+</b> school students through hands-on mathematics, and supported a
+            bilateral international science conference.</div>
         </div>
       </div>
       <div class="entry">
         <div class="when">2019 – 2022</div>
         <div>
-          <div class="role">Student Class Representative &amp; Competitor</div>
+          <div class="role">Class Representative &amp; Competitor</div>
           <div class="org">Dinh Thien Ly High School</div>
-          <div class="body">Class representative for three years; competed in city-level academic contests, the 30/4 Olympiad and chess.</div>
+          <div class="body">Class representative for three years; competed in city-level academic olympiads,
+            the 30/4 Olympiad and chess.</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- RECOGNITION -->
-  <section class="section wrap" id="awards">
-    <h2 class="sec-label">Recognition</h2>
-    <div class="awards">
-      <div class="award"><span class="t">Top 30 — Asian Hackathon for Green Future</span><span class="y">2026</span></div>
-      <div class="award"><span class="t">Top 20 — Hackathon Digiport Logistics</span><span class="y">2025</span></div>
-      <div class="award"><span class="t">100% Merit Scholarship — VGU</span><span class="y">2025–26</span></div>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section class="section wrap" id="education">
-    <h2 class="sec-label">Education</h2>
-    <div class="edu-row">
-      <div class="when">2025 – 2029</div>
-      <div>
-        <div class="inst">Vietnamese-German University (VGU)</div>
-        <div class="deg">B.Sc. Smart Mobility Engineering — dual degree with HAW Hamburg, full-tuition merit scholarship</div>
+  <!-- BACKGROUND -->
+  <section class="section wrap" id="background">
+    <h2 class="sec-label">Background</h2>
+    <div class="bg-grid">
+      <div class="bg-col">
+        <h3>Recognition</h3>
+        <div class="award"><span class="t">Top 30 — Asian Hackathon for Green Future</span><span class="y">2026</span></div>
+        <div class="award"><span class="t">Top 20 — Digiport Logistics Hackathon</span><span class="y">2025</span></div>
+        <div class="award"><span class="t">100% tuition merit scholarship — VGU</span><span class="y">2025–26</span></div>
+      </div>
+      <div class="bg-col">
+        <h3>Education</h3>
+        <div class="edu">
+          <div class="when">2025 – 2029</div>
+          <div class="inst">Vietnamese-German University</div>
+          <div class="deg">B.Sc. Smart Mobility Engineering — dual degree with HAW Hamburg, full tuition
+            scholarship. Currently in the first year.</div>
+        </div>
       </div>
     </div>
   </section>
@@ -158,7 +279,9 @@
   <!-- CONTACT -->
   <section class="section wrap" id="contact">
     <h2 class="sec-label">Contact</h2>
-    <div class="contact-line">Open to ADAS &amp; autonomous-driving internships.</div>
+    <div class="contact-line">Available for ADAS and autonomous-driving internships.</div>
+    <p class="contact-note">Happy to walk through any number on this page and show you where it came from,
+      including the ones that got worse.</p>
     <div class="links">
       <a href="mailto:nhatduongchess@gmail.com">nhatduongchess@gmail.com&nbsp;↗</a>
       <a href="https://www.linkedin.com/in/quang-nhat-duong-95208b382/" target="_blank" rel="noopener">LinkedIn&nbsp;↗</a>
@@ -171,7 +294,7 @@
 <footer class="foot">
   <div class="wrap foot-inner">
     <span>© 2026 Quang Nhat Duong</span>
-    <span>Smart Mobility Engineering · <a href="index.html">Tiếng Việt</a></span>
+    <span>Smart Mobility Engineering · <a href="index.html" hreflang="vi">Tiếng Việt</a></span>
   </div>
 </footer>
 

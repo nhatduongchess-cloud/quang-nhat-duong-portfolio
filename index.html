@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Quang Nhat Duong — Kỹ sư Smart Mobility</title>
-<meta name="description" content="Quang Nhat Duong — sinh viên Smart Mobility Engineering, xây dựng hệ thống lái tự động, thị giác máy tính và nhúng. ADAS L3 trong CARLA, AI giọng nói offline, telemetry xe điện thời gian thực.">
+<meta name="description" content="Quang Nhat Duong — sinh viên Smart Mobility Engineering, xây dựng hệ thống an toàn chủ động và giám sát tài xế. ADAS cấp L3 trong CARLA, kiểm định trên server thật; phát hiện buồn ngủ đánh giá trên 60 tài xế chưa từng thấy.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
@@ -12,18 +12,20 @@
 </head>
 <body>
 
+<a class="skip" href="#main">Tới nội dung chính</a>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="brand" href="#top">quang<span class="d">.</span>duong</a>
-    <nav class="topnav">
-      <a href="#focus">Chuyên môn</a>
+    <nav class="topnav" aria-label="Các mục">
       <a href="#work">Dự án</a>
+      <a href="#focus">Chuyên môn</a>
       <a href="#experience">Kinh nghiệm</a>
-      <a href="#awards">Giải thưởng</a>
+      <a href="#background">Hồ sơ</a>
       <a href="#contact">Liên hệ</a>
     </nav>
     <div class="controls">
-      <a class="icon-btn" href="en.html" title="English">EN</a>
+      <a class="icon-btn" href="en.html" title="English" hreflang="en">EN</a>
       <button class="icon-btn" data-theme-toggle aria-label="Đổi giao diện sáng/tối"><span class="tstate">DARK</span></button>
     </div>
   </div>
@@ -34,7 +36,7 @@
     <div class="hero-main">
       <div class="eyebrow">Kỹ sư Smart Mobility</div>
       <h1 class="hero-name">Quang Nhat Duong</h1>
-      <p class="hero-lead">Tôi xây dựng hệ thống lái tự động, thị giác máy tính và nhúng — từ stack ADAS cấp L3 trong CARLA đến AI giọng nói trên thiết bị và telemetry xe điện thời gian thực. Kỹ thuật kiểm thử được, an toàn trên hết.</p>
+      <p class="hero-lead">Tôi xây dựng hệ thống an toàn chủ động và giám sát tài xế, rồi kiểm thử đủ khắt khe để biết chúng hỏng ở đâu.</p>
       <div class="hero-meta">VGU&nbsp;×&nbsp;HAW&nbsp;Hamburg &nbsp;·&nbsp; TP.&nbsp;Hồ&nbsp;Chí&nbsp;Minh &nbsp;·&nbsp; <b>Sẵn sàng thực tập</b></div>
       <div class="hero-links">
         <a href="mailto:nhatduongchess@gmail.com">Email&nbsp;↗</a>
@@ -43,62 +45,177 @@
       </div>
     </div>
     <div class="hero-portrait">
-      <img src="assets/portrait.jpg" alt="Chân dung Quang Nhat Duong" width="300" height="360">
+      <img src="assets/portrait.jpg" alt="Chân dung Quang Nhat Duong" width="280" height="336">
     </div>
   </div>
 </header>
 
-<main>
-
-  <!-- CHUYÊN MÔN -->
-  <section class="section wrap" id="focus">
-    <h2 class="sec-label">Chuyên môn</h2>
-    <div class="focus">
-      <div class="focus-item"><span class="focus-no">01</span><div><h3>Lái tự động &amp; ADAS</h3><p>Nhận thức → hợp nhất cảm biến → phân xử an toàn chủ động committed, xây theo hướng hình học trước, kiểm định trong CARLA.</p></div></div>
-      <div class="focus-item"><span class="focus-no">02</span><div><h3>Thị giác máy tính &amp; Nhận thức</h3><p>Phát hiện, bám vật và ước lượng làn thời gian thực — YOLO, phân cụm LiDAR và hợp nhất Kalman thành khoảng cách mét.</p></div></div>
-      <div class="focus-item"><span class="focus-no">03</span><div><h3>Hệ thống nhúng &amp; IoT</h3><p>Thiết bị biên cảm biến và truyền dữ liệu: ESP32 sensor fusion, telemetry MQTT và backend time-series.</p></div></div>
-      <div class="focus-item"><span class="focus-no">04</span><div><h3>AI ứng dụng / Học máy</h3><p>AI offline trên thiết bị: Whisper với LoRA fine-tuning và dịch NLLB — bảo mật theo thiết kế, chi phí vận hành bằng không.</p></div></div>
+<div class="wrap">
+  <div class="evidence">
+    <div class="ev">
+      <div class="ev-v">204</div>
+      <div class="ev-k">kiểm thử an toàn không cần CARLA, xanh ở mỗi lần push —
+        <a href="https://github.com/nhatduongchess-cloud/carla-adas-active-safety-project/actions" target="_blank" rel="noopener">CI</a></div>
     </div>
-  </section>
+    <div class="ev">
+      <div class="ev-v">43 / 45</div>
+      <div class="ev-k">kịch bản đạt trên server mô phỏng thật —
+        <a href="https://github.com/nhatduongchess-cloud/carla-adas-active-safety-project/blob/main/docs/benchmarks/README.md" target="_blank" rel="noopener">báo cáo</a></div>
+    </div>
+    <div class="ev">
+      <div class="ev-v">60</div>
+      <div class="ev-k">tài xế chưa từng thấy trong đánh giá buồn ngủ —
+        <a href="https://github.com/nhatduongchess-cloud/guardian-co-pilot/blob/main/docs/opendata/rldd_report.md" target="_blank" rel="noopener">kết quả</a></div>
+    </div>
+    <div class="ev">
+      <div class="ev-v">100%</div>
+      <div class="ev-k">học bổng học phí theo thành tích, VGU 2025–29</div>
+    </div>
+  </div>
+</div>
+
+<main id="main">
 
   <!-- DỰ ÁN -->
   <section class="section wrap" id="work">
     <h2 class="sec-label">Dự án tiêu biểu</h2>
 
-    <div class="work-item">
-      <div class="work-head">
-        <div class="work-title">CARLA ADAS — An toàn Chủ động &amp; Lái tự động cấp L3</div>
-        <span class="work-year">2026</span>
+    <article class="case">
+      <div class="case-head">
+        <h3 class="case-title">CARLA ADAS — An toàn chủ động &amp; tự lái cấp&nbsp;L3</h3>
+        <span class="case-year">2026</span>
       </div>
-      <p class="work-desc">Pipeline lái tự động end-to-end trong CARLA: nhận thức đa cảm biến, hành lang phanh LiDAR không cần hiệu chuẩn (geometry-first), bộ phân xử an toàn committed (NORMAL → FOLLOW → EVADE → EMERGENCY_BRAKE) và bộ điều khiển tốc độ học tăng cường bị chặn dưới trần an toàn.</p>
+      <p class="case-lede">Pipeline lái tự động end-to-end trong CARLA: nhận thức đa cảm biến, hành lang phanh khẩn cấp
+        quét qua LiDAR theo hình học thay vì phụ thuộc vào độ tin cậy của bộ phát hiện, bộ phân xử an toàn committed,
+        và bộ điều khiển tốc độ học tăng cường chỉ được phép <em>đề xuất</em> tốc độ dưới một trần an toàn cứng.</p>
+
+      <div class="metrics">
+        <div class="metric">
+          <div class="m-k">Bộ kịch bản</div>
+          <div class="m-v">43 / 45</div>
+          <div class="m-n">Toàn bộ catalog × 3 seed trên server thật. Không va chạm và không lỗi khung cảm biến
+            trong cả 90 lần chạy.</div>
+        </div>
+        <div class="metric">
+          <div class="m-k">Ma trận thời tiết</div>
+          <div class="m-v">28 / 30</div>
+          <div class="m-n">Kịch bản lõi × 5 hồ sơ thời tiết. Cả hai bộ đều trượt ở cùng một kịch bản ranh giới,
+            không phải rải rác nhiều kịch bản.</div>
+        </div>
+        <div class="metric">
+          <div class="m-k">Bộ test offline</div>
+          <div class="m-v">204 + 189</div>
+          <div class="m-n">Self-test an toàn cộng unit test, đều chạy trong CI mà không cần mô phỏng,
+            kèm lint và kiểm tra kiểu tĩnh.</div>
+        </div>
+      </div>
+
+      <p class="caveat">Một lần chạy trước đó của chính bộ này báo <b>45/45</b>. Con số đó được đo khi tiêu chí độ trễ
+        phản ứng trên thực tế đang bị vô hiệu — harness không có mốc thời điểm nguy hiểm để đo từ đó, nên tiêu chí ấy
+        không thể trượt. Sau khi sửa, hai trường hợp bắt đầu trượt. Con số thấp hơn mới là con số trung thực, và đó là
+        con số được công bố, kèm phần ghi nhận lỗi còn mở thay vì chỉnh cho nó biến mất.</p>
+
+      <p class="decision"><b>Một quyết định của tôi:</b> phanh được kích hoạt bằng hình học đo được, không bằng độ tin cậy
+        của bộ phát hiện, nên một khung hình bị bỏ sót <em>tự nó</em> không thể gây ra một cú phanh bị bỏ lỡ. Bộ điều khiển
+        học nằm dưới lớp an toàn đó và không bao giờ có thể nới nó ra.</p>
+
       <div class="chips">
-        <span class="chip">179 kiểm thử trong CI</span><span class="chip">AEB hình học trước</span>
-        <span class="chip">DQN · chặn an toàn</span><span class="chip">YOLO · LiDAR · Radar</span>
+        <span class="chip">AEB hình học trước</span><span class="chip">ODD → TOR → MRM</span>
+        <span class="chip">DQN dưới trần an toàn</span><span class="chip">YOLO · LiDAR · radar</span>
+        <span class="chip">teardown fail-closed</span>
       </div>
-      <a class="src-link" href="https://github.com/nhatduongchess-cloud/carla-adas-active-safety-project" target="_blank" rel="noopener">Xem mã nguồn ↗</a>
-    </div>
-
-    <hr class="rule">
-
-    <div class="work-item">
-      <div class="work-head">
-        <div class="work-title">GuardianCo-Pilot — Guardian AI Operating System</div>
-        <span class="work-year">2026</span>
+      <div class="sources">
+        <a href="https://github.com/nhatduongchess-cloud/carla-adas-active-safety-project" target="_blank" rel="noopener">Mã nguồn&nbsp;↗</a>
+        <a href="https://github.com/nhatduongchess-cloud/carla-adas-active-safety-project/blob/main/docs/benchmarks/README.md" target="_blank" rel="noopener">Báo cáo benchmark&nbsp;↗</a>
+        <a href="https://github.com/nhatduongchess-cloud/carla-adas-active-safety-project/blob/main/docs/ARCHITECTURE.md" target="_blank" rel="noopener">Kiến trúc&nbsp;↗</a>
       </div>
-      <p class="work-desc">Lớp giám sát tài xế và an toàn chủ động phía trên ADAS — đọc cả con đường lẫn tài xế, phát hiện tài xế buồn ngủ hay ngủ gật ở 99,2% số khung hình, rồi giải thích mọi can thiệp bằng một câu tiếng Việt hay tiếng Anh, trong ~0,05 ms so với ngân sách 2 giây. Vòng học có chặn an toàn điều chỉnh ngưỡng buồn ngủ theo từng tài xế mà không ai có thể “dạy” xe im lặng. Chạy hoàn toàn trên edge.</p>
+    </article>
+
+    <article class="case">
+      <div class="case-head">
+        <h3 class="case-title">Guardian Co-Pilot — Giám sát tài xế</h3>
+        <span class="case-year">2026</span>
+      </div>
+      <p class="case-lede">Lớp giám sát trạng thái tài xế nằm trên ADAS, đọc cả con người lẫn con đường: độ khép mi mắt
+        trên một cửa sổ trượt, lần nhắm mắt liên tục dài nhất, và độ mở hàm — rồi giải thích mọi can thiệp bằng một câu.
+        Chạy hoàn toàn trên thiết bị biên.</p>
+
+      <div class="metrics">
+        <div class="metric">
+          <div class="m-k">60 tài xế chưa từng thấy</div>
+          <div class="m-v">0,53</div>
+          <div class="m-n">Macro-F1 trên tập giữ lại, mô hình hồi tiếp, 5-fold tách theo người. Luật viết tay
+            đạt 0,51 trên cùng phép chia.</div>
+        </div>
+        <div class="metric">
+          <div class="m-k">Khoảng cách overfit</div>
+          <div class="m-v">+0,20</div>
+          <div class="m-n">Trong mẫu trừ đi giữ lại. Một baseline boosting đạt 1,00 trong mẫu và 0,51 khi giữ lại —
+            khoảng cách +0,49.</div>
+        </div>
+        <div class="metric">
+          <div class="m-k">Đối chứng chéo bộ dữ liệu</div>
+          <div class="m-v warn">0,99 → 0,49</div>
+          <div class="m-n">Một bộ phân loại ảnh huấn luyện với phép chia khung ngẫu nhiên, rồi kiểm trên bộ dữ liệu
+            khác. Nó rơi về mức ngẫu nhiên.</div>
+        </div>
+      </div>
+
+      <p class="caveat">Hãy đọc cột đầu tiên như kết quả thật: trên những tài xế mô hình chưa từng thấy, bài toán này
+        <b>khó</b>, và điểm trung thực nằm gần đáy. Thí nghiệm đối chứng ở cột thứ ba chính là lý do các con số được báo
+        cáo theo cách này — cùng pipeline ấy nếu đánh giá cẩu thả sẽ cho ra 99%, và con số 99% đó sẽ chẳng có nghĩa gì.</p>
+
+      <p class="decision"><b>Một quyết định của tôi:</b> các fold kiểm định được chia theo tài xế, không theo khung hình.
+        Chia theo khung hình sẽ đặt cùng một người ở cả hai phía và biến một khuôn mặt bị học thuộc thành một kết quả
+        trông như thật.</p>
+
+      <p class="decision">Một engine dựa trên luật, đo từng khung trên <b>6 bản ghi lái có nhãn</b> (3.600 khung), bắt được
+        <b>99,2%</b> số khung suy giảm với tỉ lệ báo động giả <b>9,8%</b> và độ trễ trung vị 1,05&nbsp;giây. Sáu bản ghi là
+        một demo, không phải một tuyên bố về khả năng tổng quát hóa — dòng thời gian của từng bản ghi, gồm cả những chỗ nó
+        bất đồng với nhãn gốc, nằm ở trang demo.</p>
+
       <div class="chips">
-        <span class="chip">Điểm va chạm 19,70 → 65,60</span><span class="chip">Bắt được 99,2% khung suy giảm</span>
-        <span class="chip">Suy luận edge 9&nbsp;giây</span><span class="chip">YOLOv8 · MediaPipe · Phi-3</span>
+        <span class="chip">fold tách theo người</span><span class="chip">PERCLOS</span>
+        <span class="chip">GRU · mô hình chuỗi</span><span class="chip">MediaPipe</span>
+        <span class="chip">chạy trên thiết bị</span>
       </div>
-      <a class="src-link" href="guardian-drowsiness.html">Xem demo phát hiện ↗</a>
-      <a class="src-link" href="https://github.com/nhatduongchess-cloud/guardian-co-pilot" target="_blank" rel="noopener">Xem mã nguồn ↗</a>
-    </div>
-
-    <hr class="rule">
+      <div class="sources">
+        <a href="guardian-drowsiness.html">Demo phát hiện&nbsp;↗</a>
+        <a href="https://github.com/nhatduongchess-cloud/guardian-co-pilot" target="_blank" rel="noopener">Mã nguồn&nbsp;↗</a>
+        <a href="https://github.com/nhatduongchess-cloud/guardian-co-pilot/blob/main/docs/opendata/rldd_report.md" target="_blank" rel="noopener">Báo cáo đánh giá&nbsp;↗</a>
+      </div>
+    </article>
 
     <div class="mini-grid">
-      <div class="mini"><h3>ByteLoop — Thu gom TRWP cho xe điện</h3><p>Thu gom tĩnh điện hạt mài mòn gắn trên bánh xe với pipeline ESP32 → MQTT → Supabase và ứng dụng Flutter cho đội xe.</p></div>
-      <div class="mini"><h3>Neural Voice Console</h3><p>Speech-to-text + dịch chạy hoàn toàn offline; LoRA adapter nâng độ chính xác 87,4% → 94,3% với chi phí vận hành bằng không.</p></div>
+      <div class="mini">
+        <h3>ByteLoop — Thu gom hạt mài mòn cho xe điện</h3>
+        <p>Thu gom tĩnh điện hạt mài mòn lốp và mặt đường gắn trên bánh xe, với pipeline ESP32 → MQTT → Supabase
+          và ứng dụng Flutter cho đội xe.</p>
+      </div>
+      <div class="mini">
+        <h3>Neural Voice Console</h3>
+        <p>Chuyển giọng nói thành văn bản và dịch, chạy hoàn toàn offline nên không có âm thanh nào rời khỏi thiết bị:
+          Whisper với LoRA adapter, NLLB cho phần dịch, chi phí vận hành bằng không.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHUYÊN MÔN -->
+  <section class="section wrap" id="focus">
+    <h2 class="sec-label">Chuyên môn</h2>
+    <div class="band">
+      <div class="band-item"><span class="band-no">01</span>
+        <h3>Lái tự động &amp; ADAS</h3>
+        <p>Nhận thức, hợp nhất cảm biến và phân xử an toàn chủ động committed, kiểm định trong mô phỏng.</p></div>
+      <div class="band-item"><span class="band-no">02</span>
+        <h3>Thị giác máy tính &amp; nhận thức</h3>
+        <p>Phát hiện, bám vật và ước lượng làn — quy về khoảng cách mét, không chỉ là các khung bao.</p></div>
+      <div class="band-item"><span class="band-no">03</span>
+        <h3>Nhúng &amp; IoT</h3>
+        <p>Thiết bị biên cảm biến và truyền dữ liệu: hợp nhất trên ESP32, telemetry MQTT, backend time-series.</p></div>
+      <div class="band-item"><span class="band-no">04</span>
+        <h3>Học máy ứng dụng</h3>
+        <p>Mô hình chạy trên thiết bị, và kỷ luật đánh giá cho bạn biết chúng có thật sự hoạt động hay không.</p></div>
     </div>
   </section>
 
@@ -111,7 +228,8 @@
         <div>
           <div class="role">Logistics &amp; Finance Manager</div>
           <div class="org">Career Fair 2026 — Vietnamese-German University</div>
-          <div class="body">Điều hành Logistics &amp; Finance cho sự kiện 1.000+ sinh viên với 30+ doanh nghiệp (SAP, MiTek, Wanek) — ngân sách <b>300 triệu+&nbsp;₫</b> và đội <b>8 người</b> trong bảy tháng.</div>
+          <div class="body">Điều hành Logistics &amp; Finance cho sự kiện 1.000+ sinh viên với 30+ doanh nghiệp
+            (SAP, MiTek, Wanek) — ngân sách <b>300 triệu+&nbsp;₫</b> và đội <b>8 người</b> trong bảy tháng.</div>
         </div>
       </div>
       <div class="entry">
@@ -119,7 +237,8 @@
         <div>
           <div class="role">Student Volunteer</div>
           <div class="org">VGU Math Open Day · Germany–Vietnam Green Science Conference</div>
-          <div class="body">Hướng dẫn <b>200+</b> học sinh qua trải nghiệm toán học thực hành, và hỗ trợ một hội nghị khoa học song phương quốc tế.</div>
+          <div class="body">Hướng dẫn <b>200+</b> học sinh qua trải nghiệm toán học thực hành, và hỗ trợ một hội nghị
+            khoa học song phương quốc tế.</div>
         </div>
       </div>
       <div class="entry">
@@ -127,30 +246,31 @@
         <div>
           <div class="role">Đại diện lớp &amp; Thí sinh</div>
           <div class="org">Dinh Thien Ly High School</div>
-          <div class="body">Đại diện lớp suốt ba năm; tham gia các cuộc thi học sinh giỏi cấp thành phố, Olympic 30/4 và cờ vua.</div>
+          <div class="body">Đại diện lớp suốt ba năm; tham gia các cuộc thi học sinh giỏi cấp thành phố,
+            Olympic 30/4 và cờ vua.</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- GIẢI THƯỞNG -->
-  <section class="section wrap" id="awards">
-    <h2 class="sec-label">Giải thưởng</h2>
-    <div class="awards">
-      <div class="award"><span class="t">Top 30 — Asian Hackathon for Green Future</span><span class="y">2026</span></div>
-      <div class="award"><span class="t">Top 20 — Hackathon Digiport Logistics</span><span class="y">2025</span></div>
-      <div class="award"><span class="t">Học bổng 100% học phí — VGU</span><span class="y">2025–26</span></div>
-    </div>
-  </section>
-
-  <!-- HỌC VẤN -->
-  <section class="section wrap" id="education">
-    <h2 class="sec-label">Học vấn</h2>
-    <div class="edu-row">
-      <div class="when">2025 – 2029</div>
-      <div>
-        <div class="inst">Vietnamese-German University (VGU)</div>
-        <div class="deg">Cử nhân Smart Mobility Engineering — bằng kép với HAW Hamburg, học bổng toàn phần học phí</div>
+  <!-- HỒ SƠ -->
+  <section class="section wrap" id="background">
+    <h2 class="sec-label">Hồ sơ</h2>
+    <div class="bg-grid">
+      <div class="bg-col">
+        <h3>Giải thưởng</h3>
+        <div class="award"><span class="t">Top 30 — Asian Hackathon for Green Future</span><span class="y">2026</span></div>
+        <div class="award"><span class="t">Top 20 — Hackathon Digiport Logistics</span><span class="y">2025</span></div>
+        <div class="award"><span class="t">Học bổng 100% học phí — VGU</span><span class="y">2025–26</span></div>
+      </div>
+      <div class="bg-col">
+        <h3>Học vấn</h3>
+        <div class="edu">
+          <div class="when">2025 – 2029</div>
+          <div class="inst">Vietnamese-German University</div>
+          <div class="deg">Cử nhân Smart Mobility Engineering — bằng kép với HAW Hamburg, học bổng toàn phần học phí.
+            Hiện đang năm nhất.</div>
+        </div>
       </div>
     </div>
   </section>
@@ -159,6 +279,8 @@
   <section class="section wrap" id="contact">
     <h2 class="sec-label">Liên hệ</h2>
     <div class="contact-line">Sẵn sàng cho thực tập ADAS &amp; lái tự động.</div>
+    <p class="contact-note">Tôi sẵn lòng đi qua từng con số trên trang này và chỉ cho bạn nó đến từ đâu,
+      kể cả những con số đã tệ đi.</p>
     <div class="links">
       <a href="mailto:nhatduongchess@gmail.com">nhatduongchess@gmail.com&nbsp;↗</a>
       <a href="https://www.linkedin.com/in/quang-nhat-duong-95208b382/" target="_blank" rel="noopener">LinkedIn&nbsp;↗</a>
@@ -171,7 +293,7 @@
 <footer class="foot">
   <div class="wrap foot-inner">
     <span>© 2026 Quang Nhat Duong</span>
-    <span>Smart Mobility Engineering · <a href="en.html">English</a></span>
+    <span>Smart Mobility Engineering · <a href="en.html" hreflang="en">English</a></span>
   </div>
 </footer>
 
