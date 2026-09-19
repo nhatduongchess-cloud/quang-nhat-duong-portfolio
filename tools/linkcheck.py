@@ -24,8 +24,10 @@ class Collect(HTMLParser):
             self.ids.add(a["id"])
         if tag == "a" and a.get("href"):
             self.hrefs.append(a["href"])
-        if tag in ("img", "script") and a.get("src"):
+        if tag in ("img", "script", "source", "video") and a.get("src"):
             self.srcs.append(a["src"])
+        if tag == "video" and a.get("poster"):
+            self.srcs.append(a["poster"])
         if tag == "link" and a.get("href"):
             self.srcs.append(a["href"])
 
