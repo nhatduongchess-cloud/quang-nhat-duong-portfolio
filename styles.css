@@ -258,3 +258,89 @@ a:hover{color:var(--accent-hover);}
 .foot-inner{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:wrap;
             padding-block:var(--s5) var(--s7);font-family:var(--mono);
             font-size:var(--fs-mono-xs);color:var(--faint);}
+
+/* ============================================================
+   Motion
+
+   One rule governs everything below: the *resting* state is the
+   state the element is in when nothing has run. Animation only
+   delays arrival; it never creates it. So a page with JavaScript
+   disabled, a browser that fails to fire IntersectionObserver, and
+   a reader with prefers-reduced-motion all see a complete page -
+   none of them see blank space where a paragraph should be.
+
+   That is why the hidden state is applied by `html.js [data-rise]`
+   rather than by `[data-rise]` alone: only a script that has
+   already run can add the `js` class, so the only way to be hidden
+   is for the machinery that un-hides you to be running.
+   ============================================================ */
+
+/* Entrance: used by the hero on load and by sections on scroll. */
+html.js [data-rise]{opacity:0;transform:translateY(12px);}
+html.js [data-rise].is-in{
+  opacity:1;transform:none;
+  transition:opacity .45s cubic-bezier(.22,.61,.36,1),
+             transform .45s cubic-bezier(.22,.61,.36,1);
+  transition-delay:var(--rise-delay,0ms);
+}
+
+/* Chart: bars grow from the axis, then the reference ticks, the gap spans
+   and the value labels land on top of them.
+
+   transform-box:fill-box is load-bearing. Without it an SVG element's
+   transform-origin resolves against the nearest SVG viewport rather than the
+   element's own box, so `left center` is the left edge of the *chart*, not of
+   the bar - every bar grows from the wrong place and sweeps across the row
+   labels on its way out. */
+html.js .chart [class~="g-bar"]{
+  transform:scaleX(0);transform-box:fill-box;transform-origin:left center;
+}
+html.js .chart .g-tick,
+html.js .chart .g-span,
+html.js .chart text[font-family]{opacity:0;}
+html.js .chart.is-in [class~="g-bar"]{
+  transform:none;transition:transform .7s cubic-bezier(.22,.61,.36,1);
+  transition-delay:calc(var(--i,0) * 70ms);
+}
+html.js .chart.is-in .g-tick,
+html.js .chart.is-in .g-span{
+  opacity:1;transition:opacity .3s ease;
+  transition-delay:calc(420ms + var(--i,0) * 70ms);
+}
+html.js .chart.is-in text[font-family]{opacity:1;transition:opacity .4s ease .5s;}
+
+/* Theme change: cross-fade rather than snap. Scoped to the properties
+   that actually change, so it never lands on transform or opacity. */
+html.theme-shift,html.theme-shift *{
+  transition:background-color .22s ease,color .22s ease,
+             border-color .22s ease,fill .22s ease,stroke .22s ease !important;
+}
+
+/* Micro-interactions. */
+.hero-links a,.sources a,.links a,.ev a{
+  position:relative;transition:color .18s ease;
+}
+.hero-links a::after,.sources a::after,.links a::after{
+  content:"";position:absolute;left:0;right:100%;bottom:-3px;height:1px;
+  background:currentColor;transition:right .28s cubic-bezier(.22,.61,.36,1);
+}
+.hero-links a:hover::after,.sources a:hover::after,.links a:hover::after{right:0;}
+.case{transition:transform .3s cubic-bezier(.22,.61,.36,1);}
+.chip{transition:border-color .2s ease,color .2s ease;}
+.chip:hover{border-color:var(--faint);color:var(--ink);}
+.figure{transition:border-color .3s ease;}
+.case:hover .figure{border-color:var(--line-2);}
+.topbar{transition:box-shadow .25s ease,border-color .25s ease;}
+.topbar.is-stuck{box-shadow:0 1px 16px rgba(0,0,0,.09);}
+:root[data-theme="dark"] .topbar.is-stuck,
+:root:not([data-theme="light"]) .topbar.is-stuck{box-shadow:0 1px 20px rgba(0,0,0,.5);}
+
+/* Everything above is opt-in motion; this turns all of it off and
+   leaves the resting state, which is the finished page. */
+@media (prefers-reduced-motion: reduce){
+  html.js [data-rise],html.js [data-rise].is-in{opacity:1;transform:none;transition:none;}
+  html.js .chart [class~="g-bar"]{transform:none;}
+  html.js .chart .g-tick,html.js .chart .g-span,
+  html.js .chart text[font-family]{opacity:1;}
+  .hero-links a::after,.sources a::after,.links a::after{display:none;}
+}
